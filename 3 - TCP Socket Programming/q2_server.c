@@ -37,13 +37,12 @@ void reverse_string(char str[])
     return;
 }
 
-void rev_vowels(char*msg, char*ret_msg)
+void rev_vowels(char *msg, char *ret_msg)
 {
     char *token = strtok(str, "-");
-    int found=0
-    while (token != NULL)
+    int found = 0 while (token != NULL)
     {
-        for(int i=0;i<strlen(token)li++)
+        for (int i = 0; i < strlen(token) li++)
         {
             char compare = toupper(someString[i]));
             if ((compare == 'A') ||
@@ -52,12 +51,12 @@ void rev_vowels(char*msg, char*ret_msg)
                 (compare == 'O') ||
                 (compare == 'U'))
             {
-                found=1;
+                found = 1;
                 break;
             }
         }
-        if(found==1)
-        reverse_string(token);
+        if (found == 1)
+            reverse_string(token);
         strcat(ret_msg, token);
         strcat(ret_msg, " ");
         token = strtok(NULL, "-");

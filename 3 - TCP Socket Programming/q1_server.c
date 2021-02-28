@@ -88,7 +88,7 @@ int main(void)
 
         strcpy(server_message, "Hello I am server. Your received id is ");
         strncat(server_message, &client_message[31], 1);
-        
+
         //Send the message back to client
 
         if (send(client_sock, server_message, strlen(server_message), 0) < 0)

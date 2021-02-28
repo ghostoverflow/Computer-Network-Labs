@@ -30,7 +30,7 @@ int main(void)
     server_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
     //Now connecting to the server accept() using connect() from client side
-   
+
     if (connect(socket_desc, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0)
     {
         printf("Connection Failed. Error!!!!!");

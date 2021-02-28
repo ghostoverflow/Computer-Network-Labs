@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include<limits.h>
+#include <limits.h>
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
     FILE *fpn = fopen("nonalpha.txt", "a"); //first you should delete all text
     FILE *fpv = fopen("vowel.txt", "a");    //first you should delete all text
 
-    while (fscanf(finp, "%s", buffer) == 1)
+    while (fscanf(finp, "%s", buffer) == 1) //scanning input file
     {
         int num = INT_MIN, nonaplha = INT_MAX, vowel = INT_MIN;
 

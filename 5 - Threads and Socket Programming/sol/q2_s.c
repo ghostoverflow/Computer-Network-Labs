@@ -68,7 +68,7 @@ void *my_thread(void *message)
 
         fp = fopen("./Votes.txt", "a");
         fclose(fp);
-        
+
         fp = fopen("./Votes.txt", "r");
 
         int vote_casted = 0;

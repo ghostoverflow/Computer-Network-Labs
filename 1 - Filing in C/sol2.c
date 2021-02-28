@@ -1,173 +1,133 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 
-typedef enum
-{
-    false,
-    true
-} bool;
+// #define INT_MIN INT_MIN
+// #define INT_MAX INT_MAX
 
-void readFile(char *fname) //a
+char *readFull(char *filename)
 {
-    FILE *fd = fopen(fname, "r");
-    if (fd == NULL)
-    {
-        printf("Error opening file\n");
-        exit(1);
-    }
-    char buff[255];
-    while (fgets(buff, 255, fd) != NULL)
-    {
-        printf("%s\n", buff);
-    }
-    fclose(fd);
-}
+    char *buffer = 0;
+    long length;
+    FILE *f = fopen(filename, "rb");
 
-void getIntegers(char *fname) //b
-{
-    FILE *inFile = fopen(fname, "r");
-    FILE *outFile = fopen("Integers.txt", "w");
-    if (inFile == NULL || outFile == NULL)
+    if (f)
     {
-        printf("Error opening file\n");
-        exit(1);
-    }
-    char buff[255];
-    bool flag = false;
-    while (fgets(buff, 255, inFile) != NULL)
-    {
-        char intArr[9];
-        int i, j;
-        for (i = 0, j = 0; i < strlen(buff); ++i)
+        fseek(f, 0, SEEK_END);
+        length = ftell(f);
+        fseek(f, 0, SEEK_SET);
+        buffer = malloc(length);
+        if (buffer)
         {
-            if (buff[i] >= '0' && buff[i] <= '9')
-            {
-                if (!flag)
-                {
-                    j = 0;
-                    flag = true;
-                }
-                intArr[j++] = buff[i];
-            }
-            else if (flag)
-            {
-                flag = false;
-                intArr[j] = '\0';
-                fputs(intArr, outFile);
-                fputc('\n', outFile);
-            }
+            fread(buffer, 1, length, f);
         }
+        fclose(f);
     }
-    fclose(inFile);
-    fclose(outFile);
+
+    if (buffer)
+    {
+        buffer[length] = '\0';
+        return buffer;
+    }
+    return NULL;
 }
 
-bool checkWord(char *word)
+int countCharInStr(char *str, char ch)
 {
-    int size = strlen(word);
-    bool flag = true;
     int i;
-    for (i = 0; i < size && flag; i++)
-    {
-        if (word[i] >= 'A' && word[i] <= 'Z' || word[i] >= 'a' && word[i] <= 'z')
-            flag = false;
-    }
-    return flag;
+    for (i = 0; str[i]; str[i] == ch ? i++ : *str++)
+        ;
+    return i;
 }
 
-void nonAlpha(char *fname) //c
+char **tokenize(char *str, char *delim)
 {
-    FILE *inFile = fopen(fname, "r");
-    FILE *outFile = fopen("Non Alphabet.txt", "w");
-    if (inFile == NULL || outFile == NULL)
+    //counting
+    int count = 0;
+    for (int i = 0; i < strlen(delim); i++)
+        count += countCharInStr(str, delim[i]);
+
+    if (count == 0)
+        return NULL;
+
+    //initializing 2d array
+    char **tokens = (char **)malloc((count + 1) * sizeof(char *));
+
+    //storing tokens size at zero index;
+    tokens[0] = (char *)malloc(32 * sizeof(char));
+    tokens[0] = itoa(count + 1, tokens[0], 10);
+
+    //using strtok
+    int i = 1;
+    char *token = strtok(str, delim);
+    while (token != NULL)
     {
-        printf("Error opening file\n");
-        exit(1);
+        tokens[i++] = token;
+        token = strtok(NULL, delim);
     }
-    char buff[255];
-    bool flag = false;
-    while (fgets(buff, 255, inFile) != NULL)
-    {
-        char *token = strtok(buff, " ");
-        while (token != NULL)
-        {
-            if (checkWord(token))
-            {
-                fputs(token, outFile);
-                fputc('\n', outFile);
-            }
-            token = strtok(NULL, " ");
-        }
-    }
-    fclose(inFile);
-    fclose(outFile);
+
+    return tokens;
 }
 
-bool findVowel(char *word)
-{
-    int size = strlen(word);
-    bool flag = false;
-    int i;
-    for (i = 0; i < size && !flag; i++)
-    {
-        if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u' ||
-            word[i] == 'A' || word[i] == 'E' || word[i] == 'I' || word[i] == 'O' || word[i] == 'U')
-            flag = true;
-    }
-    return flag;
-}
+// int main()
+// {
+//     char *fdata = readFull("Input_File.txt");
+//     printf("%s\n", fdata); // part a
 
-void invert(char *fname) //d
+//     char *onlydigits = malloc(strlen(fdata));
+//     for (int i = 0, j = 0; i < strlen(fdata); i++)
+//         if (fdata[i] <= '9' && fdata[i] >= '0')
+//             onlydigits[j++] = fdata[i];
+
+//     printf("%s\n", onlydigits); // part b
+//     FILE *foutp = fopen("onlydigits.txt", "w");
+//     if (foutp)
+//         fprintf(foutp, "%s", onlydigits);
+//     fclose(foutp);
+
+//     return 0;
+// }
+
+void checkword(char *str, int *num, int *nonaplha, int *vowel)
 {
-    FILE *inFile = fopen(fname, "r");
-    FILE *outFile = fopen("Invert.txt", "w");
-    if (inFile == NULL || outFile == NULL)
+    for (int i = 0; i < strlen(str); i++)
     {
-        printf("Error opening file\n");
-        exit(1);
+        if (str[i] >= '0' && str[i] <= '9')
+            *num = INT_MAX;
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i]))
+            *nonaplha = INT_MIN;
+        if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+            *vowel = INT_MAX;
     }
-    char buff[255];
-    bool flag = false;
-    while (fgets(buff, 255, inFile) != NULL)
-    {
-        fputs("Original: ", outFile);
-        if (buff[strlen(buff) - 1] == '\n') //Removing newline character from file input
-            buff[strlen(buff) - 1] = '\0';
-        fputs(buff, outFile);
-        fputc('\n', outFile);
-        char *token = strtok(buff, " ");
-        fputs("Inverted: ", outFile);
-        while (token != NULL)
-        {
-            if (findVowel(token))
-            {
-                int size = strlen(token);
-                int n = size;
-                char temp;
-                int i;
-                for (i = 0; i < size / 2; i++, n--)
-                {
-                    temp = token[i];
-                    token[i] = token[n - 1];
-                    token[n - 1] = temp;
-                }
-            }
-            fputs(token, outFile);
-            fputc(' ', outFile);
-            token = strtok(NULL, " ");
-        }
-        fputc('\n', outFile);
-    }
-    fclose(inFile);
-    fclose(outFile);
 }
 
 int main()
 {
-    readFile("Input File.txt");
-    getIntegers("Input File.txt");
-    nonAlpha("Input File.txt");
-    invert("Input File.txt");
-    return 0;
+    char buffer[255];
+    FILE *finp = fopen("Input_File.txt", "r"); //reading file
+
+    FILE *fpd = fopen("digits.txt", "a");   //first you should delete all text
+    FILE *fpn = fopen("nonalpha.txt", "a"); //first you should delete all text
+    FILE *fpv = fopen("vowel.txt", "a");    //first you should delete all text
+
+    while (fscanf(finp, "%s", buffer) == 1)
+    {
+        int num = INT_MIN, nonaplha = INT_MAX, vowel = INT_MIN;
+        checkword(buffer, &num, &nonaplha, &vowel);
+        if (num == INT_MAX)
+        {
+            for (int i = 0; i < strlen(buffer); i++)
+                if (buffer[i] >= '0' && buffer[i] <= '9')
+                    fprintf(fpd, "%c\n", buffer[i]);
+        }
+        if (nonaplha == INT_MIN)
+        {
+            fprintf(fpn, "%s\n", buffer);
+        }
+        if (vowel == INT_MAX)
+        {
+            fprintf(fpv, "%s\n", strrev(buffer));
+        }
+    }
 }
