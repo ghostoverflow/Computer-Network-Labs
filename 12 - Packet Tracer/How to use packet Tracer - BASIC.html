@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <title>
+        Hands on: How to use Cisco Packet Tracer for the CCNA - ICTShore.com    </title>
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="shortcut icon" href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/">
+    <link rel="pingback" href="https://www.ictshore.com/xmlrpc.php">
+    <script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/sdk.js.download" async="" crossorigin="anonymous"></script><script async="" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/recaptcha__en.js.download"></script><script id="facebook-jssdk" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/sdk.js(1).download"></script><script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/jquery.min.js.download"></script>
+    <!--[if lt IE 9]>
+    <script src="https://www.ictshore.com/wp-content/themes/ascent/includes/js/html5.js"></script>
+    <![endif]-->
+    <script async="" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/f.txt"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-6323093958728833",
+        enable_page_level_ads: true
+      });
+    </script>
+    <script>(function(d, s, id){
+				 var js, fjs = d.getElementsByTagName(s)[0];
+				 if (d.getElementById(id)) {return;}
+				 js = d.createElement(s); js.id = id;
+				 js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+				 fjs.parentNode.insertBefore(js, fjs);
+			   }(document, 'script', 'facebook-jssdk'));</script>
+<!-- This site is optimized with the Yoast SEO plugin v9.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="With Cisco Packet Tracer, you can try everything you learn for your CCNA. This will prepare you for your ceritifcation and for real-life jobs. Check it out!">
+<link rel="canonical" href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hands on: How to use Cisco Packet Tracer for the CCNA - ICTShore.com">
+<meta property="og:description" content="With Cisco Packet Tracer, you can try everything you learn for your CCNA. This will prepare you for your ceritifcation and for real-life jobs. Check it out!">
+<meta property="og:url" content="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/">
+<meta property="og:site_name" content="ICTShore.com">
+<meta property="article:publisher" content="https://www.facebook.com/ICTShore/">
+<meta property="article:tag" content="Cisco Packet Tracer">
+<meta property="article:tag" content="Internet Protocol">
+<meta property="article:tag" content="IP">
+<meta property="article:tag" content="IPv4">
+<meta property="article:tag" content="Lab">
+<meta property="article:tag" content="Networking">
+<meta property="article:tag" content="Packet Capture">
+<meta property="article:section" content="Free CCNA Course">
+<meta property="article:published_time" content="2017-01-26T16:30:26+00:00">
+<meta property="article:modified_time" content="2018-06-16T08:06:57+00:00">
+<meta property="og:updated_time" content="2018-06-16T08:06:57+00:00">
+<meta property="og:image" content="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab.png">
+<meta property="og:image:secure_url" content="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab.png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="Cisco Packet Tracer: lab it up">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="With Cisco Packet Tracer, you can try everything you learn for your CCNA. This will prepare you for your ceritifcation and for real-life jobs. Check it out!">
+<meta name="twitter:title" content="Hands on: How to use Cisco Packet Tracer for the CCNA - ICTShore.com">
+<meta name="twitter:site" content="@IctShore">
+<meta name="twitter:image" content="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab.png">
+<meta name="twitter:creator" content="@IctShore">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://www.ictshore.com/","sameAs":["https://www.facebook.com/ICTShore/","https://www.linkedin.com/company/ictshore","https://twitter.com/IctShore"],"@id":"https://www.ictshore.com/#organization","name":"ICTShore.com","logo":"https://www.ictshore.com/wp-content/uploads/2017/01/logo1200sq.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://ws.sharethis.com/">
+<link rel="dns-prefetch" href="https://www.google.com/">
+<link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="ICTShore.com » Feed" href="https://www.ictshore.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="ICTShore.com » Comments Feed" href="https://www.ictshore.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="ICTShore.com » Hands on: How to use Cisco Packet Tracer for the CCNA Comments Feed" href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.ictshore.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.10"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<!-- managing ads with Advanced Ads – https://wpadvancedads.com/ --><script data-wpfc-render="false">
+					advanced_ads_ready=function(){var fns=[],listener,doc=typeof document==="object"&&document,hack=doc&&doc.documentElement.doScroll,domContentLoaded="DOMContentLoaded",loaded=doc&&(hack?/^loaded|^c/:/^loaded|^i|^c/).test(doc.readyState);if(!loaded&&doc){listener=function(){doc.removeEventListener(domContentLoaded,listener);window.removeEventListener("load",listener);loaded=1;while(listener=fns.shift())listener()};doc.addEventListener(domContentLoaded,listener);window.addEventListener("load",listener)}return function(fn){loaded?setTimeout(fn,0):fns.push(fn)}}();
+			</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<style type="text/css" media="all">
+.wpautoterms-footer{background-color:#ffffff;text-align:center;}
+.wpautoterms-footer a{color:#000000;font-family:Arial, sans-serif;font-size:14px;}
+.wpautoterms-footer .separator{color:#cccccc;font-family:Arial, sans-serif;font-size:14px;}</style>
+<!-- <link rel='stylesheet' id='wpautoterms_css-css'  href='https://www.ictshore.com/wp-content/plugins/auto-terms-of-service-and-privacy-policy/css/wpautoterms.css?ver=4.9.10' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/6brdw.css" media="all">
+<link rel="stylesheet" id="simple-share-buttons-adder-font-awesome-css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/font-awesome.min.css" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='bodhi-svgs-attachment-css'  href='https://www.ictshore.com/wp-content/plugins/svg-support/css/svgs-attachment.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='mce-comments-no-status-bar-css'  href='https://www.ictshore.com/wp-content/plugins/tinymce-comment-field/css/editor-no-statusbar.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wp-post-series-frontend-css'  href='https://www.ictshore.com/wp-content/plugins/wp-post-series/assets/css/post-series.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='wpProQuiz_front_style-css'  href='https://www.ictshore.com/wp-content/plugins/wp-pro-quiz/css/wpProQuiz_front.min.css?ver=0.37' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dlm-frontend-css'  href='https://www.ictshore.com/wp-content/plugins/download-monitor/assets/css/frontend.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='https://www.ictshore.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=2.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='dashicons-css'  href='https://www.ictshore.com/wp-includes/css/dashicons.min.css?ver=4.9.10' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/c0as1.css" media="all">
+<link rel="stylesheet" id="google-raleway-css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/css" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='ascent-bootstrap-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/resources/bootstrap/css/bootstrap.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ascent-swipebox-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/css/swipebox.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ascent-owl-carousel-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/css/owl.carousel.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ascent-owl-theme-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/css/owl.theme.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ascent-animations-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/css/animations.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ascent-meanmenu-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/css/meanmenu.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ascent-main-css'  href='https://www.ictshore.com/wp-content/themes/ascent/includes/css/main.css?ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='easy_table_style-css'  href='https://www.ictshore.com/wp-content/plugins/easy-table/themes/default/style.css?ver=1.8' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='style-css'  href='https://www.ictshore.com/wp-content/plugins/simple-google-recaptcha/style.css?v=2.9&#038;ver=4.9.10' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='enlighter-local-css'  href='https://www.ictshore.com/wp-content/plugins/enlighter/resources/EnlighterJS.min.css?ver=3.9.0' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9rcw6.css" media="all">
+<script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9r7a0.js.download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/plugins/wp-google-analytics-events/js/ga-scroll-events.js?ver=2.5.3'></script> -->
+<script id="st_insights_js" type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/st_insights.js.download"></script>
+<script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9r7a0.js(1).download" type="text/javascript"></script><style>body{display:none;}</style>
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=2.3'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/resources/bootstrap/js/bootstrap.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/bootstrap-wp.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/smoothscroll.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/jquery.swipebox.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/swipebox-config.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/owl.carousel.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/jquery.appear.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/jquery.meanmenu.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/jquery.velocity.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/appear.config.js?ver=4.9.10'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/themes/ascent/includes/js/main.js?ver=4.9.10'></script> -->
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/enable-sticky-header.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sgr_recaptcha = {"site_key":"6Lc8YxATAAAAADJ_nfCZJTh0kn_vEl50KteKjo-u"};
+/* ]]> */
+</script>
+<script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9r79y.js.download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/plugins/simple-google-recaptcha/main.js?v=2.9&#038;ver=4.9.10'></script> -->
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/api.js.download"></script>
+<script src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9r79y.js(1).download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/plugins/enlighter/resources/mootools-core-yc.js?ver=3.9.0'></script> -->
+<!-- <script type='text/javascript' src='https://www.ictshore.com/wp-content/plugins/enlighter/resources/EnlighterJS.min.js?ver=3.9.0'></script> -->
+<link rel="https://api.w.org/" href="https://www.ictshore.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ictshore.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.ictshore.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.10">
+<link rel="shortlink" href="https://www.ictshore.com/?p=523">
+<link rel="alternate" type="application/json+oembed" href="https://www.ictshore.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ictshore.com%2Ffree-ccna-course%2Fcisco-packet-tracer-introduction%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.ictshore.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.ictshore.com%2Ffree-ccna-course%2Fcisco-packet-tracer-introduction%2F&amp;format=xml">
+<meta name="generator" content="Custom Login v3.2.8">
+			<style type="text/css" media="screen">
+				/**
+				 * Plugin Name: Subtitles
+				 * Plugin URI: http://wordpress.org/plugins/subtitles/
+				 * Description: Easily add subtitles into your WordPress posts, pages, custom post types, and themes.
+				 * Author: We Cobble
+				 * Author URI: https://wecobble.com/
+				 * Version: 2.2.0
+				 * License: GNU General Public License v2 or later
+				 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+				 */
+
+				/**
+				 * Be explicit about this styling only applying to spans,
+				 * since that's the default markup that's returned by
+				 * Subtitles. If a developer overrides the default subtitles
+				 * markup with another element or class, we don't want to stomp
+				 * on that.
+				 *
+				 * @since 1.0.0
+				 */
+				span.entry-subtitle {
+					display: block; /* Put subtitles on their own line by default. */
+					font-size: 0.53333333333333em; /* Sensible scaling. It's assumed that post titles will be wrapped in heading tags. */
+				}
+				/**
+				 * If subtitles are shown in comment areas, we'll hide them by default.
+				 *
+				 * @since 1.0.5
+				 */
+				#comments .comments-title span.entry-subtitle {
+					display: none;
+				}
+			</style><style type="text/css" id="dynamic-css">
+
+</style>    <style type="text/css">
+        
+        
+        
+                    </style>
+<script type="text/javascript">/* <![CDATA[ */EnlighterJS_Config = {"selector":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"language":"no-highlight","theme":"enlighter","indent":2,"hover":"hoverEnabled","showLinenumbers":true,"rawButton":true,"infoButton":false,"windowButton":true,"rawcodeDoubleclick":false,"grouping":true,"cryptex":{"enabled":false,"email":"mail@example.tld"}};!function(){var a=function(a){var b="Enlighter Error: ";console.error?console.error(b+a):console.log&&console.log(b+a)};return window.addEvent?"undefined"==typeof EnlighterJS?void a("Javascript Resources not loaded yet!"):"undefined"==typeof EnlighterJS_Config?void a("Configuration not loaded yet!"):void window.addEvent("domready",function(){EnlighterJS.Util.Init(EnlighterJS_Config.selector.block,EnlighterJS_Config.selector.inline,EnlighterJS_Config)}):void a("MooTools Framework not loaded yet!")}();;/* ]]> */</script><link rel="icon" href="https://www.ictshore.com/wp-content/uploads/2016/07/cropped-logoAlpha1200sq-32x32.png" sizes="32x32">
+<link rel="icon" href="https://www.ictshore.com/wp-content/uploads/2016/07/cropped-logoAlpha1200sq-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://www.ictshore.com/wp-content/uploads/2016/07/cropped-logoAlpha1200sq-180x180.png">
+<meta name="msapplication-TileImage" content="https://www.ictshore.com/wp-content/uploads/2016/07/cropped-logoAlpha1200sq-270x270.png">
+        <script>
+                if (typeof ga === 'undefined') {
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                  ga('create','UA-66588011-1 ', 'www.ictshore.com');                  ga('send', 'pageview');
+                                }
+            </script> <style type="text/css">
+:root .single-ad,
+:root .inner-ad,
+:root .adsbygoogle,
+:root #content > #center > .dose > .dosesingle,
+:root #content > #right > .dose > .dosesingle
+{ display: none !important; }
+:root *[eidar7c][hidden] { display: none !important; }</style><link rel="stylesheet" type="text/css" id="u0" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/skin.min.css"><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+
+<body class="post-template-default single single-post postid-523 single-format-standard" style="display: block;">
+  <header id="masthead" class="nav" role="banner"> 
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="mail-info">
+                        <!--
+            			            			    <span class="phone-info"><i class="fa fa-phone"></i> 000-000-0000</span>
+            			            			            			    <span><i class="fa fa-envelope"></i> <a href="mailto:webmaster@ictshore.com">webmaster@ictshore.com</a></span>
+            			                        -->
+                    </div>
+                </div><!-- .col-sm-6-->
+                <div class="col-sm-6">
+                    <div class="header-social-icon-wrap">
+                        <ul class="social-icons">
+            			    <li class="social-icon"><a target="_blank" href="https://twitter.com/IctShore"><i class="fa fa-twitter"></i></a></li><li class="social-icon"><a target="_blank" href="https://www.facebook.com/ICTShore/"><i class="fa fa-facebook"></i></a></li><li class="social-icon"><a target="_blank" href="https://www.linkedin.com/company/ictshore/"><i class="fa fa-linkedin"></i></a></li>                        </ul>
+                    </div><!--.header-social-icon-wrap-->
+                </div><!-- .col-sm-6-->
+            </div>
+        </div>
+     </div>
+    <div id="header-main" class="header-bottom">
+        <div class="header-bottom-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div id="logo">
+                            <div class="site-header-inner col-sm-12">
+                                <div class="site-branding">
+                                    <div class="site-title">
+                                        <a href="https://www.ictshore.com/" title="ICTShore.com" rel="home">
+                                            <img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/logoAlpha1200sq.png" alt="ICTShore.com">
+                                            <h1><b>ICT</b>Shore.com</h1>
+                    				    </a>
+                                    </div>
+                				    <!-- <h4 class="site-description">Boost your ICT career</h4> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--.col-sm-3-->
+
+                    <div class="col-sm-9">
+                        <div class="header-search pull-right">
+                            <div id="header-search-button">Search...</div>
+                        </div>
+                        <div class="site-navigation pull-right">
+            			    <nav class="main-menu" style="display: block;">
+            				<ul id="menu-topbar-menu" class="header-nav clearfix"><li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-29"><a href="https://www.ictshore.com/">Home</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="https://www.ictshore.com/about/">About</a></li>
+<li id="menu-item-903" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-903"><a href="https://www.ictshore.com/wp-login.php">Log In</a></li>
+<li id="menu-item-904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-904"><a href="https://www.ictshore.com/wp-login.php?action=register">Register</a></li>
+</ul>            			    </nav>
+    	                    <div id="responsive-menu-container"></div>
+                        </div><!-- .site-navigation -->
+                    </div><!--.col-sm-9-->
+                </div><!--.row-->
+            </div><!-- .container -->
+        </div><!--.header-bottom-inner-->
+    </div><!--.header-bottom-->
+  <div id="header-search-form-wrap" class="header-search-form-wrap" style="top: 113px;">
+   <div class="container">
+      <form role="search" method="get" class="header-search-form search-form" action="https://www.ictshore.com/">
+         <div class="control-group">
+            <i class="fa fa-search"></i>  
+            <input type="search" class="search-field form-control" placeholder="Search …" value="" name="s" title="Search for:">
+            <button class="search" type="submit"><i class="icon-search"></i></button>
+         </div>
+      </form>
+   </div>
+</div>
+</header><!-- #masthead -->
+
+            <div id="banner" class="single-content-banner"><img width="1920" height="500" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-00-Hands_on_lab.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Cisco Packet Tracer: lab it up" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab.png 1920w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-300x78.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-768x200.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-1024x267.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-732x191.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-1140x297.png 1140w" sizes="(max-width: 1920px) 100vw, 1920px"></div>
+    
+<div class="main-content">
+    <div class="container">
+        <div id="content" class="main-content-inner">
+
+<div class="row">
+    <div class="col-sm-12 col-md-9">
+	
+		
+<article id="post-523" class="post-523 post type-post status-publish format-standard has-post-thumbnail hentry category-free-ccna-course category-hands-on-lab category-networking-fundamentals tag-cisco-packet-tracer tag-internet-protocol tag-ip tag-ipv4 tag-lab tag-networking tag-packet-capture post_series-free-ccna-course-series">
+    
+    <div class="row">
+	<div class="post-meta-info col-sm-12 col-md-2">
+	    		<div class="entry-meta">
+		    <time class="entry-time updated" itemprop="datePublished" datetime="2017-01-26T16:30:26+00:00">Jan<strong>26</strong></time>
+		    <span class="comments_count clearfix entry-comments-link"><a href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/#respond">0</a></span>
+		</div><!-- .entry-meta -->
+	    	</div><!--.post-meta-info-->
+	
+	<div class="post-content-wrap col-sm-12 col-md-10">
+	    <header class="page-header">
+		<h1 class="entry-title"><span class="entry-title-primary">Hands on: How to use Cisco Packet Tracer for the CCNA</span> <span class="entry-subtitle">It's time to lab it up! Learn how to use packet tracer to simulate network environments</span></h1>
+                <span class="entry-tags">
+            <a class="tag" href="https://www.ictshore.com/category/free-ccna-course/">Free CCNA Course</a><a class="tag" href="https://www.ictshore.com/category/hands-on-lab/">Hands-on Lab</a><a class="tag" href="https://www.ictshore.com/category/networking-fundamentals/">Networking Fundamentals</a>        </span>
+        		 		    <span class="entry-author">
+			Written by			<span class="author vcard entry-author-link">
+			    <a href="https://www.ictshore.com/author/alessandro-maggio/" title="Posts by Alessandro Maggio" rel="author">Alessandro Maggio</a>			</span>
+		    </span>
+			    </header><!-- .entry-header -->
+	    <div class="entry-content">
+						    		    			<figure id="featured-figure">
+			    <a id="swipebox-img-container" class="swipebox" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-00-Hands_on_lab.png" title="">
+				<img width="732" height="191" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-00-Hands_on_lab-732x191.png" class="attachment-blog-page size-blog-page wp-post-image" alt="Cisco Packet Tracer: lab it up" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-732x191.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-300x78.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-768x200.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-1024x267.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-1140x297.png 1140w" sizes="(max-width: 732px) 100vw, 732px">                
+			    </a>
+			</figure>
+		    				
+		<div class="ictsh-before-article-free-ccna-course" id="ictsh-1044965674"><!-- [Adv] -->
+
+<div class="custom-ads-container before-content small free-ccna captive-index">
+ <a href="https://www.ictshore.com/free-ccna-course-start/">
+   <div class="inner-container">
+        <h3>Want a free and complete CCNA guide? Click here</h3>
+   </div>
+ </a>
+</div>
+
+<!-- [/Adv] --></div><aside class="wp-post-series-box series-free-ccna-course-series expandable"><p class="wp-post-series-name">
+		This is post 21 of 62 in the series <em>“Free CCNA Course”</em>	</p>
+
+	
+		<nav class="wp-post-series-nav"><ol><li>
+						<a href="https://www.ictshore.com/free-ccna-course/introduction-to-computer-networks/">						Introduction to Computer Networks						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/your-career-in-the-ict-world/">						Your career in the ICT world						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/vendor-provider-and-system-integrator/">						The ICT top players: vendor, provider and system integrator						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/vendors-certification-programs/">						Be recognized: vendors certification programs						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/discover/osi-model-introduction/">						The OSI model: complex networks made simple						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/binary-math-introduction/">						Nothing but the bit: introduction to binary math						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/physical-layer-signals/">						Physical layer: signals, waves and transmission types						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/networking-fundamentals/physical-layer-copper-media/">						Physical layer: copper media and ethernet cable						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/physical-layer-fiber-optic-media/">						Physical layer: fiber optic media, data as light pulses						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/physical-layer-wireless-media/">						Physical layer: wireless media, Wi-Fi and more						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/network-topology/">						Interconnecting devices: the network topology						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/data-link-layer/">						The Data Link layer of the OSI model						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/network-layer-ipv4-addressing/">						Network Layer: IPv4 Addressing and IPv4 Protocol						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/network-layer-ipv4-subnetting/">						Network Layer: The ultimate guide to IPv4 subnetting						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/network-layer-ipv6-addressing/">						Network Layer: IPv6 addressing and IPv6 protocol						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/transmission-control-protocol-advanced/">						Transmission Control Protocol (TCP): The advanced stuff						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/session-and-presentation-layers/">						Session and Presentation layers in the OSI model						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/application-layer/">						Application layer and some popular protocols						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/protocols-for-the-network/">						Protocols for the network: DNS, DHCP, Dynamic Routing						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/network-device/">						The network device: form factor and console access						</a>					</li>
+									<li>
+												<span class="entry-title-primary">Hands on: How to use Cisco Packet Tracer for the CCNA</span> <span class="entry-subtitle">It's time to lab it up! Learn how to use packet tracer to simulate network environments</span>											</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/switch-configuration-fundamentals/">						Switch configuration fundamentals for Cisco devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/switch-troubleshooting-basics/">						Cisco Switch Troubleshooting Basics and Steps list						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/cdp-lldp-discover-network-topology/">						How to use CDP and LLDP to discover the network topology						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/troubleshooting-interface-errors/">						Troubleshooting interface errors, speed, and duplex mismatch						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/port-security/">						Configure and Troubleshoot Port Security						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/routing-table-fundamentals/">						Routing concepts: How to read the Routing Table						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/static-routes-configuration/">						Static Routes Configuration and other Routing Sources						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/inter-vlan-routing-router-on-a-stick/">						Inter-VLAN Routing with Router on a Stick (RoaS)						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/inter-vlan-routing-multilayer-switch/">						Inter-VLAN Routing with Multilayer Switch						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/rip-dynamic-routing/">						RIP Dynamic Routing: Understanding and Configuring						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/ipv6-routing-ripng/">						IPv6 Routing with Static routes and RIPng						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/three-tier-architecture/">						Cisco Three Tier Architecture Explained						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/mobility-security/">						Mobility and Security in the Enterprise Architecture						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/client-troubleshooting/">						Client Troubleshooting: IP and DNS Settings						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/dhcpv6-basics/">						DHCPv6 Configuration: SLAAC, Stateless and Stateful						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/ntp-configuration/">						NTP Configuration on Cisco Devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/access-lists-fundamentals/">						Access Lists fundamentals on Cisco Devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/access-lists-configuration/">						Access Lists Configuration on Cisco devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/nat-fundamentals/">						NAT: Network Address Translation Explained						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/nat-configuration/">						NAT Configuration and Troubleshooting on Cisco devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/ssh-syslog-termon/">						Handy tools on Cisco routers: SSH, Syslog, Terminal Monitor						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/troubleshooting-tips-networking/">						Troubleshooting Tips for Networking						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/vtp-vlan-trunk-protocol/">						VTP – Understand and Configure VLAN Trunk Protocol						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/stp-understanding-spanning-tree/">						Understanding Spanning Tree Protocol (STP)						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/stp-configuring-spanning-tree/">						Configure and Troubleshoot Cisco Spanning Tree (STP)						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/portchannel-configure-troubleshoot/">						Configure and Troubleshoot Cisco PortChannels						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/hsrp-understanding/">						Understanding Hot Standby Router Protocol (HSRP)						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/hsrp-configuring/">						Configuring and Troubleshooting Cisco HSRP						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/access-layer-security-dot1x/">						Access Layer Security for the CCNA						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/ospf-understanding/">						OSPF, All you need to know for the CCNA						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/ospfv6-configuration/">						OSPFv6: Configuring OSPF for IPv6 on Cisco routers						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/eigrp-understanding/">						EIGRP, All You need to know for the CCNA						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/eigrp-for-ipv6/">						EIGRP for IPv6 Configuration and Troubleshooting						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/ppp-multilink-configuration/">						PPP and Multilink PPP on Cisco devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/gre-tunnel-tutorial/">						GRE Tunnel tutorial on Cisco devices						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/wan-connections/">						WAN Connections and Technologies Explained						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/bgp-single-homed/">						Configuring Single-Homed External BGP for the CCNA						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/cloud-services-evn/">						Cloud services and Easy Virtual Network for the CCNA						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/snmp-introduction/">						SNMP v1, v2c and v3 on Cisco Devices Explained						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/aaa-ipsla-span/">						AAA, IPSLA and SPAN: The Enterprise services you need						</a>					</li>
+									<li>
+						<a href="https://www.ictshore.com/free-ccna-course/sdn-introduction-network-programmability/">						SDN Introduction and Cisco Network Programmability						</a>					</li>
+							</ol></nav><div class="wp-post-series-description"><p>This series guides you from the very beginning to the full skill-set you need to reach the Associate-level on networking for both on-the-job tasks and for the actual certification.</p>
+</div>
+		
+	</aside><p>Getting your CCNA is much easier if you try what you learn. Purchasing real gear may be expensive, especially if you are going to use them for the certification only. Fortunately, Cisco helps us with a network simulation software called Packet Tracer. This software is specifically designed for training, and it allows you to create a simulated Enterprise network in a few minutes. In this article we will help you to get your Packet Tracer running for all the labs that you are going to find in the CCNA course.</p>
+<h3>The need for practice</h3>
+<p><a class="inline-twitter-link inline-tweet-click" href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/#" onclick="inline_tweet_sharer_open_win(&#39;https:\/\/twitter.com\/intent\/tweet?url=https%3A%2F%2Fwww.ictshore.com%2Ffree-ccna-course%2Fcisco-packet-tracer-introduction%2F&amp;text=The+knowledge+you+get+in+the+field+is+different+than+the+one+you+get+on+the+books+&#39;);" title="Tweet This!">The knowledge you get in the field is different than the one you get on the books <span class="dashicons dashicons-twitter dashicons-inline-tweet-sharer"></span></a>. You can consider this statement as always true, but in networking it is extremely true. In order to setup <em>an Enterprise network</em>, you should know pretty well all the <em>configuration commands</em> and the logic behind them. There is no shortcuts on knowing logic and concepts, but with command it’s a little bit different. Instead of memorizing all the commands <em>word-by-word</em>, if you understand how the Cisco device process them you will be able to do the configuration anyway. You can get hints by the operating system, and you can rely on Google for quick searches. Moreover, real-world practice allows you to <strong>don’t blow up your network for a distraction</strong>. There are tons of items that you know about, but that you might forget about in the moment you are doing the configuration.</p>
+<p>In our CCNA course you can find a lot of hints to avoid mistakes, but practice is the real deal. You have several options to apply what you learn:</p>
+<ul><li>On the job training – if you are already working in Networking or ICT</li>
+<li>Simulation software, like Cisco Packet tracer</li>
+<li>Emulation software, like GNS3</li>
+</ul><p>Cisco developed Packet Tracer specifically for <strong>CCNA-level trainings</strong>, and this is why we chose it. While Packet Tracer cannot help you for CCNP labs, it is great to try out CCNA-level stuff. More than that, it is probably the simpler one to use and configure: download, install, done. Before getting into labs, as we will in the following articles, it’s time to get our Packet Tracer running.</p>
+<h3>Welcome to Cisco Packet Tracer</h3>
+<h4>Obtain Packet Tracer</h4>
+<p>The first thing you have to do is <strong>download Cisco Packet Tracer</strong>. You can find it for free on the Cisco Networking Academy website at <a href="https://www.netacad.com/">this page</a>. You just have to sign up for the Cisco Packet Tracer <a href="https://www.netacad.com/" target="_blank">training campaign</a> with name and email, then you will be redirected to the introduction course. From there, click on the “Download Packet Tracer” link on the main page. Select which version you want to download, according to your operating System <em>(Windows? Linux? 64 or 32 bits?)</em> and the download will start. Once you downloaded the software, just install it. The installation is a next-next process, no advanced stuff like driver setup, network services or daemons is required. Once done, just launch the software so that we can take a look at its interface.</p>
+<div id="attachment_574" style="width: 1093px" class="wp-caption aligncenter"><img class="size-full wp-image-574" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-01-Download_packet_tracer.png" alt="Download Cisco Packet Tracer" width="1083" height="543" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-01-Download_packet_tracer.png 1083w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-01-Download_packet_tracer-300x150.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-01-Download_packet_tracer-768x385.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-01-Download_packet_tracer-1024x513.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-01-Download_packet_tracer-732x367.png 732w" sizes="(max-width: 1083px) 100vw, 1083px"><p class="wp-caption-text">Once you join the training program, you will be able to download Packet Tracer following the dedicated link.</p></div>
+<p><em>Extra tip: you can also get Packet Tracer for mobile devices, there is a version for Android and a version for Apple IOS. Cisco offers you QR codes pointing to the application (in Play Store and Apple Store).<br></em></p>
+<p><em>Note: Packet Tracer will ask you to sign-in with your Netacad account (the one you just created when enrolling the course) every time you launch the software. You can avoid to log in every time by disconnecting your PC from the Internet the time you launch Packet Tracer. You can connect it back once it is opened.</em></p>
+<h4>Packet Tracer 101</h4>
+<p>For our CCNA course, we are using <strong>Cisco Packet Tracer 7</strong>. This version introduces a lot of cool features, like Internet of Things (IoT) devices. From this version, when you launch the software you have to log in with a <strong>Cisco Netacad account</strong> in order to unlock full features. If you don’t have it, you can register a new one for free: this will be useful in case you want to follow some official training too. When you open packet tracer for the first time, you will be prompted to <em>grant network access</em> by Windows Firewall. Check both public and private networks and press OK, so that you can use Packet Tracer with your friends to work together on the same network (not needed if you plan to work on your PC only).</p><div class="ictsh-inside-the-article" id="ictsh-1476743118"><div style="text-align: center; " id="ictsh-1221265500"><!-- [Adv] Article (Inline) from Adsense, with wrapping -->
+<div class="custom-ads-container single-ad content-inline" eidar7c="" hidden="">
+<p class="holder">Article continues below the advertisement</p>
+<div class="inner-ad articleInline336x280" eidar7c="" hidden="">
+<script async="" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/f.txt"></script><!-- Article (Inline) 336x280 --><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6323093958728833" data-ad-slot="8578322700" eidar7c="" hidden=""></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+</div>
+<div style="height: 30px; display: block;"></div>
+<!-- [/Adv] --></div></div>
+<div id="attachment_575" style="width: 1930px" class="wp-caption aligncenter"><img class="size-full wp-image-575" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-02-Packet_tracer_interface.png" alt="Packet Tracer initial interface" width="1920" height="1030" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-02-Packet_tracer_interface.png 1920w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-02-Packet_tracer_interface-300x161.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-02-Packet_tracer_interface-768x412.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-02-Packet_tracer_interface-1024x549.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-02-Packet_tracer_interface-732x393.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-02-Packet_tracer_interface-1140x612.png 1140w" sizes="(max-width: 1920px) 100vw, 1920px"><p class="wp-caption-text">This is what you see once you start Cisco Packet Tracer. A pretty big white drawing area and several menu on top, right and bottom. We will cover these menu in just a bit.</p></div>
+<p>With Packet Tracer, you are able to actually draw a network, configure it and see how it works. You can even save it in a file and load it later. Let’s have a look at <strong>the interface</strong> appearing when you launch the software. As you can see, we have a big white window in the middle with several commands and menus around. <em>At the very top</em>, you have the list of commands you can find in any program: File, Edit, Options and so on. Then, on the blue top toolbar, you have some shortcuts to commands you can find in the menus above.</p>
+<div id="attachment_576" style="width: 608px" class="wp-caption aligncenter"><img class="size-full wp-image-576" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-03-Packet_tracer_top_menu.png" alt="Cisco Packet Tracer top menu and toolbar" width="598" height="86" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-03-Packet_tracer_top_menu.png 598w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-03-Packet_tracer_top_menu-300x43.png 300w" sizes="(max-width: 598px) 100vw, 598px"><p class="wp-caption-text">At the top of Packet Tracer interface, you find the classic drop-down menu and some shortcuts in the blue bar.</p></div>
+<h4>Topology toolbar</h4>
+<p>Just below the blue top toolbar, you can find a large yellow panel. This is the <strong>topology toolbar</strong>, containing useful information about your drawing. You will rely on these information if you want to format your file cleanly, with an image background and so on. However, for normal usage of Cisco Packet Tracer, <em>you don’t need to worry about this bar</em>.</p>
+<div id="attachment_577" style="width: 1839px" class="wp-caption aligncenter"><img class="size-full wp-image-577" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-04-Packet_tracer_topology_menu.png" alt="Packet Tracer logical topology toolbar" width="1829" height="107" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-04-Packet_tracer_topology_menu.png 1829w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-04-Packet_tracer_topology_menu-300x18.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-04-Packet_tracer_topology_menu-768x45.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-04-Packet_tracer_topology_menu-1024x60.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-04-Packet_tracer_topology_menu-732x43.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-04-Packet_tracer_topology_menu-1140x67.png 1140w" sizes="(max-width: 1829px) 100vw, 1829px"><p class="wp-caption-text">This is the Packet Tracer Topology toolbar with the “Logical” tab selected.</p></div>
+<p>The <em>switch</em> between Logical and Physical topology is the leftmost element of the bar. You can use it to switch between logical topology (icon with three dots) or physical topology (server icon).</p>
+<div id="attachment_578" style="width: 131px" class="wp-caption aligncenter"><img class="size-full wp-image-578" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-05-Switch_between_physical_and_logical.png" alt="Cisco Packet Tracer switch between logical and physical topology" width="121" height="102"><p class="wp-caption-text">Switch between logical and physical topology.</p></div>
+<p>Besides that, we are going to use the <strong>logical topology</strong> almost all the time. This is because here we can see the logical interconnection between devices, and work with a clean white background. Just for you to know, in the physical topology we see the same devices in racks and wiring closets. Here’s a screenshot of a brand-new file with <strong>physical topology</strong> tab selected.</p>
+<div id="attachment_579" style="width: 1930px" class="wp-caption aligncenter"><img class="size-full wp-image-579" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-06-Physical_topology_pane.png" alt="Cisco Packet Tracer physical topology" width="1920" height="840" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-06-Physical_topology_pane.png 1920w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-06-Physical_topology_pane-300x131.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-06-Physical_topology_pane-768x336.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-06-Physical_topology_pane-1024x448.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-06-Physical_topology_pane-732x320.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-06-Physical_topology_pane-1140x499.png 1140w" sizes="(max-width: 1920px) 100vw, 1920px"><p class="wp-caption-text">In the physical topology, you can see fictitious cities, buildings and wiring closets.</p></div>
+<h4>The Drawing menu</h4>
+<p>At the right of the drawing area we have the <strong>drawing menu</strong>, containing some tools to enrich your design. You can use this menu to place text notes in the drawing, add geometrical shapes and resize them. Inside this menu, you can also find some tools not related to drawing, but to packet inspection instead. For example, with the <em>“Inspect”</em> tool you can check the data travelling onto a cable. Packet inspection is a very cool feature of Cisco Packet Tracer, and we will see it later in this article.</p>
+<div id="attachment_580" style="width: 86px" class="wp-caption aligncenter"><img class="size-full wp-image-580" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-07-Packet_tracer_left_menu.png" alt="Cisco Packet Tracer drawing menu" width="76" height="353"><p class="wp-caption-text">This is the default “drawing menu” of Cisco Packet Tracer.</p></div>
+<p>From top to bottom, the available command are these: <em>Select, Place note, Delete, Inspect, Draw a polygon, Resize shape, Add simple PDU and Add Complex PDU</em>.</p>
+<h4>Real-time and Simulation mode toolbar</h4>
+<p>Right below the drawing window, we find another <em>yellow toolbar</em>. This one is about the mode we want our devices to behave. We can switch between two modes, Real-time and simulation. In <strong>real-time mode</strong>, devices react immediately to your commands just like real-world devices. You can even fast-forward the time, for example to skip the bootup process. In <strong>simulation mode</strong>, instead, you have to press a button to move to the next instant. This allow you to inspect data travelling on cables, and it is very useful for debugging and <em>learning purposes</em>.</p>
+<div id="attachment_582" style="width: 1930px" class="wp-caption aligncenter"><img class="size-full wp-image-582" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-08-Timing_panel.png" alt="Cisco Packet Tracer timing toolbar" width="1920" height="86" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-08-Timing_panel.png 1920w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-08-Timing_panel-300x13.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-08-Timing_panel-768x34.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-08-Timing_panel-1024x46.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-08-Timing_panel-732x33.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-08-Timing_panel-1140x51.png 1140w" sizes="(max-width: 1920px) 100vw, 1920px"><p class="wp-caption-text">Use the mode toolbar to play with timing options.</p></div>
+<p>If you are in real-time mode, at the very left of this panel you can find the time elapsed since the creation of the current Packet Tracer file. Time increments, second-by-second, only if you keep the file open. Next to that, you have the option to <strong>power-cycle</strong> devices or <strong>fast-forward</strong> time. Clicking on <em>“Power Cycle Devices”</em> will cause all devices to reboot immediately.</p>
+<p>If you switch to <strong>simulation mode</strong>, you will find a new panel on the right. In this panel, you are able to see a list of packets sent along the network, and control they way Packet Tracer gathers these information. With the <em>“Play Controls”</em>, you define the way time passes. To do that, you have two options: manual forward or automatic forward. With manual forward, you have to press on the <em>“Capture / Forward”</em> button to see the next step a packet takes. Instead, with <em>“Auto Capture / Play”</em> this will be done automatically and slowly. Use the bar below that to adjust the speed. Below that, you can also set filters to specify which packets you want to see.</p>
+<div id="attachment_583" style="width: 583px" class="wp-caption aligncenter"><img class="size-full wp-image-583" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-09-Simulation_menu.png" alt="Cisco Packet Tracer simulation menu" width="573" height="816" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-09-Simulation_menu.png 573w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-09-Simulation_menu-211x300.png 211w" sizes="(max-width: 573px) 100vw, 573px"><p class="wp-caption-text">This is the Cisco Packet Tracer simulation menu.</p></div>
+<h4>Device menu</h4>
+<p>We kept the most important menu for last: the <strong>device toolbar</strong>. At the very bottom of Packet Tracer’s interface, we have a large bar that we can use to insert devices into the picture. After adding a device from here, we will be able to control it from the drawing window. Before talking about that, let’s have a look at this toolbar.</p>
+<p>&nbsp;</p>
+<div id="attachment_584" style="width: 753px" class="wp-caption aligncenter"><img class="size-full wp-image-584" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-10-Device_panel.png" alt="Cisco Packet Tracer device toolbar" width="743" height="101" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-10-Device_panel.png 743w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-10-Device_panel-300x41.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-10-Device_panel-732x101.png 732w" sizes="(max-width: 743px) 100vw, 743px"><p class="wp-caption-text">Packet Tracer device toolbar with “Network devices” selected.</p></div>
+<p>As from the screenshot, this toolbar is divided in two parts. On the left, we have two rows of icons: the <em>top category</em> is on top and the <em>sub-category</em> is on bottom. If you hover any icon on these two rows you will see the description in the white rectangle that separates the row. Depending on the combination of category and sub-category, Packet Tracer will present you different devices on the right part of the toolbar. There is no point in listing all the devices available in this article, it is a lot easier for you to explore the various tabs. However, Packet Tracer contains several models of <em>switches</em>, <em>routers</em>, <em>end-devices</em> and – from version 7 – <em>IoT devices</em>.</p>
+<p>To <em>kick-start</em> you, here’s the most important device categories we are going to work with. Above everything else, we are going to use network devices. Then, there are two other categories we have to use with them: end-devices and connections. In end-devices (the computer icon), you can find computers, smartphones and servers. <strong>Connections</strong> are instead represented by an orange bolt, and you use them to interconnect other devices.</p>
+<h3>Adding and connecting devices</h3>
+<h4>How to add devices in the drawing window</h4>
+<p>Now that we know how Packet Tracer works, it’s time to add some devices! Once you add a device to the drawing window you will be able to control it. So, using the device panel we already explained, select <strong>End Devices &gt; End devices</strong>. Then, drag two “Generic PCs” into your drawing area. After that, move to <strong>Network Devices &gt; Switches</strong> and drag the switch named 2960 (2960-24TT) into the picture. For simplicity, we put them in a triangle shape.</p>
+<div id="attachment_585" style="width: 356px" class="wp-caption aligncenter"><img class="size-full wp-image-585" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-11-Adding_devices.png" alt="Cisco Packet Tracer: how to add devices" width="346" height="310" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-11-Adding_devices.png 346w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-11-Adding_devices-300x269.png 300w" sizes="(max-width: 346px) 100vw, 346px"><p class="wp-caption-text">Two PCs and a switch added in Cisco Packet Tracer.</p></div>
+<h4>How to connect devices together</h4>
+<p>Now that we added the devices, we need to connect them together. To do that, select the <strong>Connections &gt; Connections</strong> category. Now we have several possibilities, among them you can make Packet Tracer decide which cable suits best every condition. However, for today we are going to use a simple Copper straight-through cable (the black solid line). You know from the previous articles that a device can have <em>multiple NICs</em>, so how do we select the one to plug the cable into? It is extremely simple. Just select the cable, then click on a device you want to connect: a menu with all the available interfaces will open.</p>
+<div id="attachment_586" style="width: 228px" class="wp-caption aligncenter"><img class="size-full wp-image-586" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-12-Adding_cables.png" alt="Cisco Packet Tracer: how to add cables" width="218" height="170"><p class="wp-caption-text">From the available interfaces/ports, you can select the one you need.</p></div>
+<p>For this example, we will connect <code>PC0 FastEthernet 0</code> to <code>Switch FastEthernet 0/1</code> and <code>PC1 Fast Ethernet 0</code> to <code>Switch FastEthernet0/2</code>. As soon as you connect the cables, you will see some colored dots on their ends, as in picture below.</p>
+<div id="attachment_587" style="width: 417px" class="wp-caption aligncenter"><img class="size-full wp-image-587" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-13-Wait_for_spanning_tree.png" alt="Cisco Packet Tracer: orange dots on cables" width="407" height="385" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-13-Wait_for_spanning_tree.png 407w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-13-Wait_for_spanning_tree-300x284.png 300w" sizes="(max-width: 407px) 100vw, 407px"><p class="wp-caption-text">Devices are now connected.</p></div>
+<p>Data can travel over a cable only if the two dots on it are green. However, when you connect the cables you will see the switch side turning orange. This is because the switch is doing some checks before turning on the interface, so you just have to wait (or fast-forward the time). The dot indicating the port-status refers to the interface status of the closest device. It can be of three different colors.</p>
+<ul><li><strong>Green</strong> – the port is working at OSI layer 1 and 2</li>
+<li><strong>Orange</strong> – the port is powered on, but software is blocking it</li>
+<li><strong>Red</strong> – the port is shut down</li>
+</ul><p>Once your ports become green, you are ready to see how we configure devices in Cisco Packet Tracer.</p>
+<h3>Configuring devices in Cisco Packet Tracer</h3>
+<h4>Configuring a&nbsp; Network Device</h4>
+<p>In Packet Tracer, you are going to work with a huge variety of devices. Therefore, you are going to face different ways on configuring devices, depending on the device itself. Two major device categories exist: <em>network devices</em> and <em>end-devices</em>, each with its own configuration.</p>
+<p>You are going to configure network devices by using the <strong>CLI (Command-Line Interface)</strong>, where you interact with the device using text only. To reach the CLI of a network device, just click on it with the select tool. A new window will pop-up, and from its tabs you just have to select CLI. This way, you will gain console access to the device.</p>
+<div id="attachment_588" style="width: 572px" class="wp-caption aligncenter"><img class="size-full wp-image-588" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-14-Controlling_switches.png" alt="Cisco Packet Tracer: manage switches via CLI" width="562" height="759" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-14-Controlling_switches.png 562w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-14-Controlling_switches-222x300.png 222w" sizes="(max-width: 562px) 100vw, 562px"><p class="wp-caption-text">This is the CLI of our switch.</p></div>
+<p>In this tutorial, we are not going to configure any network device. The only switch we added will work <em>out-of-the box</em>, no configuration needed. Instead, read on to see how we will configure end devices.</p>
+<h4>Configuring End Devices</h4>
+<p>Configuring end devices is relatively simple, as you can do it completely from the Graphical Interface of Cisco Packet Tracer. The mechanism is always the same, just click on the device you want to configure and a new window will pop-up. From that window, navigate to the config tab. In there, we need to configure the <code>FastEthernet 0</code> interface, so click on that from the menu on the left (if you don’t see it, click on <code>INTERFACE</code> from that menu to see the interfaces).</p>
+<div id="attachment_589" style="width: 862px" class="wp-caption aligncenter"><img class="size-full wp-image-589" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-15-Configure_IP.png" alt="Cisco Packet Tracer: configure IP address on a computer" width="852" height="739" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-15-Configure_IP.png 852w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-15-Configure_IP-300x260.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-15-Configure_IP-768x666.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-15-Configure_IP-732x635.png 732w" sizes="(max-width: 852px) 100vw, 852px"><p class="wp-caption-text">This is the window we use to set the IP address of a device.</p></div>
+<p>In this window, select “Static” in the “IP Configuration” box. Then, configure the PC on the left with an IP address of <code>192.168.1.1</code> and a subnet mask of <code>255.255.255.0</code>. After that, configure the other PC with an IP address of <code>192.168.1.2</code> and the same subnet mask as the other one. For now, you don’t need to specify anything else: you can just close those windows, Packet Tracer will maintain the changes you made.</p>
+<h3>Packet Tracer Simulation mode</h3>
+<h4>Getting ready for the capture</h4>
+<p>In networking, we call <strong>capture</strong> the content of a packet that we catch for debugging purposes. In other words, a packet is flowing onto a cable and we are able somehow to check its content when it’s in the cable. Packet tracer allows us to do so in the simulation mode, but we must create some traffic to capture. The first thing we want to do is to switch to Simulation mode. Now, nothing can happen unless we manually forward the time. Anyway, before that we need to configure <em>capture filters</em> to tell Packet Tracer which type of packets we want to see.</p>
+<div id="attachment_590" style="width: 522px" class="wp-caption aligncenter"><img class="size-full wp-image-590" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-16-Capture_ARP_and_ICMP.png" alt="Cisco Packet Tracer: simulation mode example" width="512" height="116" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-16-Capture_ARP_and_ICMP.png 512w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-16-Capture_ARP_and_ICMP-300x68.png 300w" sizes="(max-width: 512px) 100vw, 512px"><p class="wp-caption-text">For this capture, we are going to see ARP and ICMP packets.</p></div>
+<p>By default, Packet Tracer will listen to everything. To change that, click on <em>“Show All/None”</em> to remove all active filters. Then, click on <em>“Edit filters”</em> to manually add ARP and ICMP, that you can find under the IPv4 tab. Now, we are ready to generate the traffic to capture.</p>
+<h4>Generating traffic</h4>
+<p>For this example, we are going to generate some traffic going from a PC to the other. The traffic we are going to create is ICMP, and we are going to do so with a <strong>ping command</strong>. Basically, with ping, a PC asks the other <em>“Are you there?”</em> and the other one responds.</p>
+<p>Select the PC on the right, then go to the <em>Desktop tab</em> and click on <strong>Command Prompt</strong>.</p>
+<div id="attachment_591" style="width: 885px" class="wp-caption aligncenter"><img class="size-full wp-image-591" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-17-Go_to_command_prompt.png" alt="Cisco Packet Tracer: desktop tab on PC" width="875" height="257" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-17-Go_to_command_prompt.png 875w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-17-Go_to_command_prompt-300x88.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-17-Go_to_command_prompt-768x226.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-17-Go_to_command_prompt-732x215.png 732w" sizes="(max-width: 875px) 100vw, 875px"><p class="wp-caption-text">This is the desktop tab for a PC in Packet Tracer.</p></div>
+<p>Once the prompt opens, ping the IP address of the other PC. In this case, we are going to do that with the command <code>ping 192.168.1.1</code>.</p>
+<div id="attachment_592" style="width: 844px" class="wp-caption aligncenter"><img class="size-full wp-image-592" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-18-Pinging.png" alt="Cisco Packet Tracer: how to ping" width="834" height="157" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-18-Pinging.png 834w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-18-Pinging-300x56.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-18-Pinging-768x145.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-18-Pinging-732x138.png 732w" sizes="(max-width: 834px) 100vw, 834px"><p class="wp-caption-text">Pinging the other PC in Packet Tracer.</p></div>
+<p>Now, nothing will happen because Packet Tracer is waiting for us to forward time. Meanwhile, if you check the drawing area, you will see that two packets are buffered on your PC waiting to go onto the cable.</p>
+<div id="attachment_593" style="width: 141px" class="wp-caption aligncenter"><img class="size-full wp-image-593" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-19-Packet_buffer.png" alt="Cisco Packet tracer: simulation mode packet buffer" width="131" height="108"><p class="wp-caption-text">Packets in the buffer of the PC.</p></div>
+<p>Each protocol is indicated with a color, so two packets of the same protocol will always have the same color. In this picture, two packets of two colors exist: one is the ICMP and one is the ARP. You can see that they are waiting to be sent because of the loading icon of moving bars on the envelope. Press <strong>Capture/Forward</strong> in the simulation menu to send the first packet onto the cable.</p>
+<h4>Checking the content of packets</h4>
+<p>If you think this is good, Packet Tracer has even more to offer. If you click on any envelope, you will be able to see all its details, including the headers at any OSI layer. Here’s an example of the ARP packet.</p>
+<div id="attachment_594" style="width: 477px" class="wp-caption aligncenter"><img class="size-full wp-image-594" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/1022-20-PDU.png" alt="Cisco Packet Tracer: verify the PDU" width="467" height="654" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-20-PDU.png 467w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-20-PDU-214x300.png 214w" sizes="(max-width: 467px) 100vw, 467px"><p class="wp-caption-text">This is the ARP PDU as collected with Packet Tracer.</p></div>
+<p>Now, it’s time for you to play with this feature and see how the ICMP requests goes on. remember to check the prompt of your PC once finished to see the records of the replies.</p>
+<h3>Conclusion</h3>
+<p>After this article, you should now have Packet Tracer up and running on your PC. More than that, you know how to use it. This is going to be extremely important as we continue with the CCNA course, as you will use Packet Tracer to try everything you learn, with the help of our guided labs.</p>
+<!-- Simple Share Buttons Adder (7.5.19) simplesharebuttons.com --><div class="ssba-classic-2 ssba ssbp-wrap left ssbp--theme-1"><div style="text-align:left"><span class="ssba-share-text">Share your knowledge!</span><a data-site="" class="ssba_facebook_share" href="https://www.facebook.com/sharer.php?u=https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/" target="_blank"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/facebook.png" style="width: 35px;" title="Facebook" class="ssba ssba-img" alt="Share on Facebook"><div title="Facebook" class="ssbp-text">Facebook</div></a><a data-site="linkedin" class="ssba_linkedin_share ssba_share_link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/" target="&quot;_blank&quot;"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/linkedin.png" style="width: 35px;" title="LinkedIn" class="ssba ssba-img" alt="Share on LinkedIn"><div title="Linkedin" class="ssbp-text">Linkedin</div></a><a data-site="" class="ssba_twitter_share" href="https://twitter.com/share?url=https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/&amp;text=Hands%20on%3A%20How%20to%20use%20Cisco%20Packet%20Tracer%20for%20the%20CCNA%20It%26%23039%3Bs%20time%20to%20lab%20it%20up%21%20Learn%20how%20to%20use%20packet%20tracer%20to%20simulate%20network%20environments%20" target="&quot;_blank&quot;"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/twitter.png" style="width: 35px;" title="Twitter" class="ssba ssba-img" alt="Tweet about this on Twitter"><div title="Twitter" class="ssbp-text">Twitter</div></a><a data-site="reddit" class="ssba_reddit_share" href="https://reddit.com/submit?url=https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/&amp;title=Hands%20on:%20How%20to%20use%20Cisco%20Packet%20Tracer%20for%20the%20CCNA%20It%27s%20time%20to%20lab%20it%20up!%20Learn%20how%20to%20use%20packet%20tracer%20to%20simulate%20network%20environments" target="&quot;_blank&quot;"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/reddit.png" style="width: 35px;" title="Reddit" class="ssba ssba-img" alt="Share on Reddit"><div title="Reddit" class="ssbp-text">Reddit</div></a><a data-site="pinterest" class="ssba_pinterest_share" href="javascript:void((function()%7Bvar%20e=document.createElement(&#39;script&#39;);e.setAttribute(&#39;type&#39;,&#39;text/javascript&#39;);e.setAttribute(&#39;charset&#39;,&#39;UTF-8&#39;);e.setAttribute(&#39;src&#39;,&#39;//assets.pinterest.com/js/pinmarklet.js?r=&#39;+Math.random()*99999999);document.body.appendChild(e)%7D)());"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/pinterest.png" style="width: 35px;" title="Pinterest" class="ssba ssba-img" alt="Pin on Pinterest"><div title="Pinterest" class="ssbp-text">Pinterest</div></a><a data-site="email" class="ssba_email_share" href="mailto:?subject=Hands%20on:%20How%20to%20use%20Cisco%20Packet%20Tracer%20for%20the%20CCNA%20It%26%23039;s%20time%20to%20lab%20it%20up!%20Learn%20how%20to%20use%20packet%20tracer%20to%20simulate%20network%20environments&amp;body=%20https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/email.png" style="width: 35px;" title="Email" class="ssba ssba-img" alt="Email this to someone"><div title="email" class="ssbp-text">email</div></a><a data-site="digg" class="ssba_diggit_share ssba_share_link" href="https://www.digg.com/submit?url=https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/" target="&quot;_blank&quot;"><img src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/diggit.png" style="width: 35px;" title="Digg" class="ssba ssba-img" alt="Digg this"><div title="Digg" class="ssbp-text">Digg</div></a><span class="fb-save fb_iframe_widget" style="display:inline-block" data-uri="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=12&amp;locale=en_US&amp;sdk=joey&amp;uri=https%3A%2F%2Fwww.ictshore.com%2Ffree-ccna-course%2Fcisco-packet-tracer-introduction%2F"><span style="vertical-align: bottom; width: 147px; height: 28px;"><iframe name="f29495f06fa51cc" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:save Facebook Social Plugin" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/save.html" style="border: none; visibility: visible; width: 147px; height: 28px;" class=""></iframe></span></span></div></div>
+<div class="ictsh-below-article-free-ccna-course" style="text-align: center; " id="ictsh-646385752"><!-- Free CCNA Course bottom article newsletter subscription -->
+<div class="custom-ads-container full-width-article short  newsletter-free-ccna-course">
+<div class="inner-container">
+<div class="absolute-spacer"></div>
+<div class="absolute-container">
+<!-- Inner -->
+<div id="mailpoet_form_2" class="mailpoet_form mailpoet_form_php">
+    <style type="text/css">#mailpoet_form_2 .mailpoet_form {  }
+#mailpoet_form_2 .mailpoet_paragraph {  }
+#mailpoet_form_2 .mailpoet_text_label, #mailpoet_form_2 .mailpoet_textarea_label, #mailpoet_form_2 .mailpoet_select_label, #mailpoet_form_2 .mailpoet_radio_label, #mailpoet_form_2 .mailpoet_checkbox_label, #mailpoet_form_2 .mailpoet_list_label, #mailpoet_form_2 .mailpoet_date_label { display: block; }
+#mailpoet_form_2 .mailpoet_text, #mailpoet_form_2 .mailpoet_textarea, #mailpoet_form_2 .mailpoet_select, #mailpoet_form_2 .mailpoet_date { display: block; }
+#mailpoet_form_2 .mailpoet_checkbox {  }
+#mailpoet_form_2 .mailpoet_validate_success { color: #468847; }
+#mailpoet_form_2 .mailpoet_validate_error { color: #b94a48; }</style>
+    <form method="post" action="https://www.ictshore.com/wp-admin/admin-post.php?action=mailpoet_subscription_form" class="mailpoet_form mailpoet_form_php" novalidate="">
+      <input type="hidden" name="form_id" value="2">
+      <input type="hidden" name="token" value="912397eba6">
+      <input type="hidden" name="endpoint" value="subscribers">
+      <input type="hidden" name="method" value="subscribe">
+		<h3 class="widget-title">Get your CCNA Faster</h3>
+		<p class="incipit">Get labs, challenges and exclusive content for free - directly to your inbox</p>
+      <p class="mailpoet_paragraph"><input type="email" class="mailpoet_text" name="email" title="Email" value="" data-parsley-required="true" data-parsley-error-message="Please specify a valid email address." placeholder="Your email goes here..."></p>
+<p class="mailpoet_submit"><input type="submit" value="Subscribe!"></p>
+
+      <div class="mailpoet_message">
+        <p class="mailpoet_validate_success" style="display:none;">Check your inbox or spam folder to confirm your subscription.</p>
+        <p class="mailpoet_validate_error" style="display:none;">        </p>
+      </div>
+    </form>
+  </div>
+  <!-- Inner END -->
+</div>
+</div>
+</div>
+<!-- [END] Free CCNA Course bottom article newsletter subscription --></div>			    </div><!-- .entry-content -->
+    
+	    <footer class="footer-meta">
+				    		    			
+		    		    
+		    <div class="cat-tag-meta-wrap">
+						    <span class="cats-meta"><i class="fa fa-folder"></i> <a href="https://www.ictshore.com/category/free-ccna-course/" rel="category tag">Free CCNA Course</a>, <a href="https://www.ictshore.com/category/hands-on-lab/" rel="category tag">Hands-on Lab</a>, <a href="https://www.ictshore.com/category/networking-fundamentals/" rel="category tag">Networking Fundamentals</a></span>
+									    <span class="tags-meta"><i class="fa fa-tags"></i> <a href="https://www.ictshore.com/tag/cisco-packet-tracer/" rel="tag">Cisco Packet Tracer</a>, <a href="https://www.ictshore.com/tag/internet-protocol/" rel="tag">Internet Protocol</a>, <a href="https://www.ictshore.com/tag/ip/" rel="tag">IP</a>, <a href="https://www.ictshore.com/tag/ipv4/" rel="tag">IPv4</a>, <a href="https://www.ictshore.com/tag/lab/" rel="tag">Lab</a>, <a href="https://www.ictshore.com/tag/networking/" rel="tag">Networking</a>, <a href="https://www.ictshore.com/tag/packet-capture/" rel="tag">Packet Capture</a></span>
+					    </div>
+		                <div class="about-the-author">
+                <div class="avatar-container">
+                    <img alt="" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/b16a2af53a7a40c57a8452fcec76a6f9.jpeg" srcset="https://secure.gravatar.com/avatar/b16a2af53a7a40c57a8452fcec76a6f9?s=192&amp;d=mm&amp;r=g 2x" class="avatar avatar-96 photo" height="96" width="96">                    <h1>Alessandro Maggio</h1>
+                    <p>I love delivering first-class network environments. I do that as a Network Engineer by designing and implementing solutions, which I am often able to deploy in a partially-automated fashion by developing process automation scripts.</p>
+                    <a class="read-more" href="http://ictshore.com/about/">Full bio →</a>
+                </div>
+            </div>
+			    </footer><!-- .entry-meta -->			
+	</div><!--.post-content-wrap-->
+    </div><!--.row-->
+</article><!-- #post-## -->
+
+<script type="text/javascript">
+    $('#banner').addClass('single-content-banner');
+    $('#banner').html('<img width="1920" height="500" src="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Cisco Packet Tracer: lab it up" srcset="https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab.png 1920w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-300x78.png 300w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-768x200.png 768w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-1024x267.png 1024w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-732x191.png 732w, https://www.ictshore.com/wp-content/uploads/2017/01/1022-00-Hands_on_lab-1140x297.png 1140w" sizes="(max-width: 1920px) 100vw, 1920px" />');
+</script>
+		    <nav role="navigation" id="nav-below" class="post-navigation">
+	<h1 class="screen-reader-text">Post navigation</h1>
+	<ul class="pager">
+
+	
+	    <li class="nav-previous previous"><a href="https://www.ictshore.com/free-ccna-course/network-device/" rel="prev"><span class="meta-nav">←</span> The network device: form factor and console access</a></li>	    <li class="nav-next next"><a href="https://www.ictshore.com/free-ccna-course/switch-configuration-fundamentals/" rel="next">Switch configuration fundamentals for Cisco devices <span class="meta-nav">→</span></a></li>
+		</ul>
+    </nav><!-- #nav-below -->
+    
+		
+<div id="comments" class="comments-area">
+
+    
+    
+    
+    	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/#respond" style="display:none;">Cancel Reply</a></small></h3>			<form action="https://www.ictshore.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><div id="wp-comment-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><!-- <link rel='stylesheet' id='editor-buttons-css'  href='https://www.ictshore.com/wp-includes/css/editor.min.css?ver=4.9.10' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9rcw6(1).css" media="all">
+<div id="wp-comment-editor-container" class="wp-editor-container"><div id="mceu_10" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 100%;"><div id="mceu_10-body" class="mce-container-body mce-stack-layout"><div id="mceu_11" class="mce-top-part mce-container mce-stack-layout-item mce-first"><div id="mceu_11-body" class="mce-container-body"><div id="mceu_12" class="mce-toolbar-grp mce-container mce-panel mce-first mce-last" hidefocus="1" tabindex="-1" role="group"><div id="mceu_12-body" class="mce-container-body mce-stack-layout"><div id="mceu_13" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_13-body" class="mce-container-body mce-flow-layout"><div id="mceu_14" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_14-body"><div id="mceu_0" class="mce-widget mce-btn mce-first" tabindex="-1" aria-pressed="false" role="button" aria-label="Bold"><button id="mceu_0-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div id="mceu_1" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Italic"><button id="mceu_1-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div><div id="mceu_2" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Underline"><button id="mceu_2-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-underline"></i></button></div><div id="mceu_3" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Strikethrough"><button id="mceu_3-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-strikethrough"></i></button></div><div id="mceu_4" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Cut"><button id="mceu_4-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-cut"></i></button></div><div id="mceu_5" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Copy"><button id="mceu_5-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-copy"></i></button></div><div id="mceu_6" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Paste"><button id="mceu_6-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-paste"></i></button></div><div id="mceu_7" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Blockquote"><button id="mceu_7-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-blockquote"></i></button></div><div id="mceu_8" class="mce-widget mce-btn" tabindex="-1" aria-pressed="false" role="button" aria-label="Insert/edit link"><button id="mceu_8-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-link"></i></button></div><div id="mceu_9" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Remove link"><button id="mceu_9-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-unlink"></i></button></div></div></div></div></div></div></div></div></div><div id="mceu_15" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="comment_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area. Press Alt-Shift-H for help." style="width: 100%; height: 200px; display: block;" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/saved_resource.html"></iframe></div><div id="mceu_16" class="mce-statusbar mce-container mce-panel mce-stack-layout-item mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_16-body" class="mce-container-body mce-flow-layout"><div id="mceu_17" class="mce-path mce-flow-layout-item mce-first"><div class="mce-path-item">&nbsp;</div></div><div id="mceu_18" class="mce-flow-layout-item mce-last mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea class="wp-editor-area" rows="15" autocomplete="off" cols="40" name="comment" id="comment" style="display: none;" aria-hidden="true"></textarea></div>
+</div>
+
+<p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"></p>
+<div class="sgr-recaptcha"></div><p class="form-submit"><input name="submit" type="submit" id="commentsubmit" class="submit btn btn-primary" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="523" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>			</form>
+			</div><!-- #respond -->
+	</div><!-- #comments -->
+
+	
+    </div>
+    
+    <div class="col-sm-12 col-md-3">
+        	
+<div class="sidebar">
+
+        <div class="sidebar-padder">
+
+		<aside class="widget ictsh-widget"><!-- Sidebar newsletter subscription form -->
+<div class="custom-ads-container sidebar vertical newsletter-generic">
+<div class="inner-container">
+<div class="absolute-spacer"></div>
+<div class="absolute-container">
+<!-- Inner -->
+<div id="mailpoet_form_3" class="mailpoet_form mailpoet_form_php">
+    <style type="text/css">#mailpoet_form_3 .mailpoet_form {  }
+#mailpoet_form_3 .mailpoet_paragraph {  }
+#mailpoet_form_3 .mailpoet_text_label, #mailpoet_form_3 .mailpoet_textarea_label, #mailpoet_form_3 .mailpoet_select_label, #mailpoet_form_3 .mailpoet_radio_label, #mailpoet_form_3 .mailpoet_checkbox_label, #mailpoet_form_3 .mailpoet_list_label, #mailpoet_form_3 .mailpoet_date_label { display: block; }
+#mailpoet_form_3 .mailpoet_text, #mailpoet_form_3 .mailpoet_textarea, #mailpoet_form_3 .mailpoet_select, #mailpoet_form_3 .mailpoet_date { display: block; }
+#mailpoet_form_3 .mailpoet_checkbox {  }
+#mailpoet_form_3 .mailpoet_validate_success { color: #468847; }
+#mailpoet_form_3 .mailpoet_validate_error { color: #b94a48; }</style>
+    <form method="post" action="https://www.ictshore.com/wp-admin/admin-post.php?action=mailpoet_subscription_form" class="mailpoet_form mailpoet_form_php" novalidate="">
+      <input type="hidden" name="form_id" value="3">
+      <input type="hidden" name="token" value="912397eba6">
+      <input type="hidden" name="endpoint" value="subscribers">
+      <input type="hidden" name="method" value="subscribe">
+		<h3>Boost your knowledge</h3>
+                <div id="ads-generic-newsletter-spacer-1"></div>
+		<p class="incipit">We deliver exclusive content to our subscribers, for free. Join other professionals now!</p>
+<div id="ads-generic-newsletter-spacer-2"></div>
+      <p class="mailpoet_paragraph"><input type="email" class="mailpoet_text" name="email" title="Email" value="" data-parsley-required="true" data-parsley-error-message="Please specify a valid email address." placeholder="Your email goes here.."></p>
+<p class="mailpoet_submit"><input class="icts_gatrack-newslettersubscription" type="submit" value="Subscribe!"></p>
+
+      <div class="mailpoet_message">
+        <p class="mailpoet_validate_success" style="display:none;">Check your inbox or spam folder to confirm your subscription.</p>
+        <p class="mailpoet_validate_error" style="display:none;">        </p>
+      </div>
+    </form>
+  </div>
+  <!-- Inner END -->
+</div>
+</div>
+</div>
+<!-- [END] Sidebar newsletter subscription form --></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul class="nav">
+											<li>
+					<a href="https://www.ictshore.com/ict-basics/httponly-cookie/">What is a HttpOnly Cookie? A Simple Definition</a>
+									</li>
+											<li>
+					<a href="https://www.ictshore.com/ict-basics/how-to-custom-prompt-command/">How to: create a custom prompt command in Windows</a>
+									</li>
+											<li>
+					<a href="https://www.ictshore.com/big-data/mongodb-windows-tutorial/">MongoDB Windows Tutorial: Easy install and setup</a>
+									</li>
+											<li>
+					<a href="https://www.ictshore.com/data-center/what-is-distributed-computing/">What is Distributed Computing in simple terms</a>
+									</li>
+											<li>
+					<a href="https://www.ictshore.com/networking-fundamentals/bmon-tutorial/">How to use bmon to monitor bandwidth usage</a>
+									</li>
+					</ul>
+		</aside><aside id="text-3" class="widget widget_text"><h3 class="widget-title">Advertisement</h3>			<div class="textwidget"><script async="" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/f.txt"></script>
+<!-- Left Sidebar -->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px" data-ad-client="ca-pub-6323093958728833" data-ad-slot="8283155105" eidar7c="" hidden=""></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul class="nav">
+	<li class="cat-item cat-item-396"><a href="https://www.ictshore.com/category/advanced-networking/">Advanced Networking</a>
+</li>
+	<li class="cat-item cat-item-535"><a href="https://www.ictshore.com/category/big-data/">Big Data</a>
+</li>
+	<li class="cat-item cat-item-348"><a href="https://www.ictshore.com/category/cloud/">Cloud</a>
+</li>
+	<li class="cat-item cat-item-496"><a href="https://www.ictshore.com/category/data-center/">Data Center</a>
+</li>
+	<li class="cat-item cat-item-251"><a href="https://www.ictshore.com/category/networking-fundamentals/design/">Design</a>
+</li>
+	<li class="cat-item cat-item-516"><a href="https://www.ictshore.com/category/devops/">DevOps</a>
+</li>
+	<li class="cat-item cat-item-2"><a href="https://www.ictshore.com/category/discover/" title="These posts does not provide you technical skills, but instead they give you an overview on technologies, careers and possibilities you have in the ICT world.">Discover</a>
+</li>
+	<li class="cat-item cat-item-198"><a href="https://www.ictshore.com/category/free-ccna-course/" title="These posts provides you the full skill-set you need to get your CCNA Certification and showcase what you learn in real-world job. It can help you to land your first-time job in networking.">Free CCNA Course</a>
+</li>
+	<li class="cat-item cat-item-389"><a href="https://www.ictshore.com/category/gns3/">GNS3</a>
+</li>
+	<li class="cat-item cat-item-384"><a href="https://www.ictshore.com/category/hacking/">Hacking</a>
+</li>
+	<li class="cat-item cat-item-189"><a href="https://www.ictshore.com/category/hands-on-lab/">Hands-on Lab</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="https://www.ictshore.com/category/ict-basics/" title="No matter if you are a coder, a network engineer or a web developer, these posts contains must-have skills for all ICT-related jobs.">ICT Basics</a>
+</li>
+	<li class="cat-item cat-item-471"><a href="https://www.ictshore.com/category/network-design/">Network Design</a>
+</li>
+	<li class="cat-item cat-item-402"><a href="https://www.ictshore.com/category/network-security/">Network Security</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://www.ictshore.com/category/networking-fundamentals/" title="These post contains in-depth training on must-have skills for Network Engineers.">Networking Fundamentals</a>
+</li>
+	<li class="cat-item cat-item-370"><a href="https://www.ictshore.com/category/packet-tracer/">Packet Tracer</a>
+</li>
+	<li class="cat-item cat-item-406"><a href="https://www.ictshore.com/category/python/">Python</a>
+</li>
+	<li class="cat-item cat-item-211"><a href="https://www.ictshore.com/category/quick-and-easy/" title="When you look for a quick answer, or an easy explanation about a very specific topic, you are going to find extremely useful this category.">Quick and Easy</a>
+</li>
+	<li class="cat-item cat-item-229"><a href="https://www.ictshore.com/category/networking-fundamentals/routing/">Routing</a>
+</li>
+	<li class="cat-item cat-item-431"><a href="https://www.ictshore.com/category/sdn/">SDN</a>
+</li>
+	<li class="cat-item cat-item-224"><a href="https://www.ictshore.com/category/networking-fundamentals/security/">Security</a>
+</li>
+	<li class="cat-item cat-item-508"><a href="https://www.ictshore.com/category/software-design/">Software Design</a>
+</li>
+	<li class="cat-item cat-item-193"><a href="https://www.ictshore.com/category/networking-fundamentals/switching/">Switching</a>
+</li>
+	<li class="cat-item cat-item-281"><a href="https://www.ictshore.com/category/networking-fundamentals/tools/">Tools</a>
+</li>
+	<li class="cat-item cat-item-199"><a href="https://www.ictshore.com/category/troubleshooting/">Troubleshooting</a>
+</li>
+	<li class="cat-item cat-item-375"><a href="https://www.ictshore.com/category/wireshark/">WireShark</a>
+</li>
+		</ul>
+</aside>	    
+    </div><!-- close .sidebar-padder -->
+</div><!-- close .sidebar -->
+    </div>
+</div>
+        </div><!-- close .*-inner (main-content) -->
+    </div><!-- close .container -->
+</div><!-- close .main-content -->
+
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="container animated fadeInLeft">
+        <div class="row">
+            <div class="site-footer-inner col-sm-12 clearfix">
+              
+
+        <div class="sidebar-padder">
+
+            <aside id="text-5" class="widget widget_text col-3"><h3 class="widget-title">Our mission</h3>			<div class="textwidget">ICTShore.com has the simple goal to boost your ICT skills. We commit to that every day by deliverying first-class learning material, tools and resources.</div>
+		</aside><aside id="meta-4" class="widget widget_meta col-3"><h3 class="widget-title">Navigate</h3>			<ul class="nav">
+			<li><a rel="nofollow" href="https://www.ictshore.com/wp-login.php?action=register">Register</a></li>			<li><a rel="nofollow" href="https://www.ictshore.com/wp-login.php">Log in</a></li>
+			<li><a href="https://www.ictshore.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://www.ictshore.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="text-6" class="widget widget_text col-3"><h3 class="widget-title">Disclaimer</h3>			<div class="textwidget"><p>We put all our effort in delivering quality content and training material.</p>
+<p>However, we have no partnership with Cisco. All the contents on this website is not endorsen nor sponsorized by Cisco or its partners.</p>
+</div>
+		</aside>      
+    </div><!-- close .sidebar-padder -->
+            </div>
+        </div>
+    </div><!-- close .container -->
+    <div id="footer-info">
+        <div class="container">
+            <div class="site-info">
+                                <a href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/#">© 2016 ICTShore.com </a>
+                <span class="sep"></span>
+            </div><!-- close .site-info -->
+        </div>
+    </div>
+</footer><!-- close #colophon -->
+<!--<script>
+$(document).ready(function(){
+        $(window).trigger('scroll');
+        $(window).bind('scroll', function () {
+            var pixels = 0; //number of pixels before modifying styles
+            if ($(window).scrollTop() > pixels) {
+                $('header').addClass('fixed');
+            } else {
+                $('header').removeClass('fixed');
+            }
+        }); 
+});
+</script>-->
+<script>
+$(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
+
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 80
+         }, 900, 'swing', function () {
+             window.location.hash = target;
+         });
+     });
+ });
+
+</script>
+
+    <a href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/#top" id="scroll-top" style="display: inline;"></a>
+
+<!-- <link rel='stylesheet' id='simple-share-buttons-adder-ssba-css'  href='https://www.ictshore.com/wp-content/plugins/simple-share-buttons-adder/css/ssba.css?ver=4.9.10' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/9rcw4.css" media="all">
+<style id="simple-share-buttons-adder-ssba-inline-css" type="text/css">
+	.ssba {
+									padding: 15px;
+									
+									
+									
+								}
+								.ssba img
+								{
+									width: 35px !important;
+									padding: 6px;
+									border:  0;
+									box-shadow: none !important;
+									display: inline !important;
+									vertical-align: middle;
+									box-sizing: unset;
+								}
+								
+								.ssba-classic-2 .ssbp-text {
+									display: none!important;
+								}
+								
+								.ssba .fb-save
+								{
+								padding: 6px;
+								line-height: 30px; }
+								.ssba, .ssba a
+								{
+									text-decoration:none;
+									background: none;
+									
+									font-size: 20px;
+									
+									font-weight: bold;
+								}
+								.ssba.ssba-wrap,
+.ssba.ssba-wrap > div {
+ font-family: Aleo, monospace;
+}
+
+			   #ssba-bar-2 .ssbp-bar-list {
+					max-width: 48px!important;;
+			   }
+			   #ssba-bar-2 .ssbp-bar-list li a {height: 48px!important; width: 48px!important; 
+				}
+				#ssba-bar-2 .ssbp-bar-list li a:hover {
+				}
+					
+				#ssba-bar-2 .ssbp-bar-list li a::before {line-height: 48px!important;; font-size: 18px;}
+				#ssba-bar-2 .ssbp-bar-list li a:hover::before {}
+				#ssba-bar-2 .ssbp-bar-list li {
+				margin: 0px 0!important;
+				}@media only screen and ( max-width: 750px ) {
+				#ssba-bar-2 {
+				display: block;
+				}
+			}
+@font-face {
+				font-family: 'ssbp';
+				src:url('https://www.ictshore.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.eot?xj3ol1');
+				src:url('https://www.ictshore.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.eot?#iefixxj3ol1') format('embedded-opentype'),
+					url('https://www.ictshore.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.woff?xj3ol1') format('woff'),
+					url('https://www.ictshore.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.ttf?xj3ol1') format('truetype'),
+					url('https://www.ictshore.com/wp-content/plugins/simple-share-buttons-adder/fonts/ssbp.svg?xj3ol1#ssbp') format('svg');
+				font-weight: normal;
+				font-style: normal;
+
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+</style>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/ssba.js.download"></script><iframe src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/portal.html" id="st_gdpr_iframe" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe>
+<script type="text/javascript">
+Main.boot( [] );
+</script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/tinymce-comment-field.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/comment-reply-4.8.0.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/skip-link-focus-fix.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/wp-embed.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/post-series.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/","uid":"0","time":"1555613385","secure":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/utils.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/editor.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/wp-a11y.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No results found.","linkSelected":"Link selected.","linkInserted":"Link inserted."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/wplink.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/core.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/widget.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/position.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/menu.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/autocomplete.min.js.download"></script>
+
+		<script type="text/javascript">
+		tinyMCEPreInit = {
+			baseURL: "https://www.ictshore.com/wp-includes/js/tinymce",
+			suffix: ".min",
+						mceInit: {'comment':{theme:"modern",skin:"lightgray",language:"en",formats:{alignleft: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"left"}},{selector: "img,table,dl.wp-caption", classes: "alignleft"}],aligncenter: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"center"}},{selector: "img,table,dl.wp-caption", classes: "aligncenter"}],alignright: [{selector: "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li", styles: {textAlign:"right"}},{selector: "img,table,dl.wp-caption", classes: "alignright"}],strikethrough: {inline: "del"}},relative_urls:false,remove_script_host:false,convert_urls:false,browser_spellcheck:true,fix_list_elements:true,entities:"38,amp,60,lt,62,gt",entity_encoding:"raw",keep_styles:false,cache_suffix:"wp-mce-4800-20180716",resize:"vertical",menubar:false,branding:false,preview_styles:"font-family font-size font-weight font-style text-decoration text-transform",end_container_on_empty_block:true,wpeditimage_html5_captions:true,wp_lang_attr:"en-US",wp_keep_scroll_position:false,wp_shortcut_labels:{"Heading 1":"access1","Heading 2":"access2","Heading 3":"access3","Heading 4":"access4","Heading 5":"access5","Heading 6":"access6","Paragraph":"access7","Blockquote":"accessQ","Underline":"metaU","Strikethrough":"accessD","Bold":"metaB","Italic":"metaI","Code":"accessX","Align center":"accessC","Align right":"accessR","Align left":"accessL","Justify":"accessJ","Cut":"metaX","Copy":"metaC","Paste":"metaV","Select all":"metaA","Undo":"metaZ","Redo":"metaY","Bullet list":"accessU","Numbered list":"accessO","Insert\/edit image":"accessM","Remove link":"accessS","Toolbar Toggle":"accessZ","Insert Read More tag":"accessT","Insert Page Break tag":"accessP","Distraction-free writing mode":"accessW","Keyboard Shortcuts":"accessH"},content_css:"https://www.ictshore.com/wp-content/uploads/tinymce-comment-field-editor.css?t=1469966746",plugins:"colorpicker,lists,fullscreen,image,wordpress,wpeditimage,wplink",selector:"#comment",wpautop:true,indent:false,toolbar1:"bold,italic,underline,strikethrough,cut,copy,paste,blockquote,link,unlink",toolbar2:"",toolbar3:"",toolbar4:"",tabfocus_elements:":prev,:next",body_class:"comment post-type-post post-status-publish post-format-standard page-template-default locale-en-us",height:"200",directionality:"ltr"}},
+			qtInit: {},
+			ref: {plugins:"colorpicker,lists,fullscreen,image,wordpress,wpeditimage,wplink",theme:"modern",language:"en"},
+			load_ext: function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+		</script>
+		<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/tinymce.min.js.download"></script>
+<script type="text/javascript" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/plugin.min.js.download"></script>
+<script type="text/javascript">
+tinymce.addI18n( 'en', {"Ok":"OK","Bullet list":"Bulleted list","Insert\/Edit code sample":"Insert\/edit code sample","Url":"URL","Spellcheck":"Check Spelling","Row properties":"Table row properties","Cell properties":"Table cell properties","Paste row before":"Paste table row before","Paste row after":"Paste table row after","Cut row":"Cut table row","Copy row":"Copy table row","Merge cells":"Merge table cells","Split cell":"Split table cell","Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.":"Paste is now in plain text mode. Contents will now be pasted as plain text until you toggle this option off.\n\nIf you\u2019re looking to paste rich content from Microsoft Word, try turning this option off. The editor will clean up text pasted from Word automatically.","Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help":"Rich Text Area. Press Alt-Shift-H for help.","You have unsaved changes are you sure you want to navigate away?":"The changes you made will be lost if you navigate away from this page.","Your browser doesn't support direct access to the clipboard. Please use the Ctrl+X\/C\/V keyboard shortcuts instead.":"Your browser does not support direct access to the clipboard. Please use keyboard shortcuts or your browser\u2019s edit menu instead.","Edit ":"Edit"});
+tinymce.ScriptLoader.markDone( 'https://www.ictshore.com/wp-includes/js/tinymce/langs/en.js' );
+</script>
+		<script type="text/javascript">
+		var ajaxurl = "/wp-admin/admin-ajax.php";
+		( function() {
+			var init, id, $wrap;
+
+			if ( typeof tinymce !== 'undefined' ) {
+				if ( tinymce.Env.ie && tinymce.Env.ie < 11 ) {
+					tinymce.$( '.wp-editor-wrap ' ).removeClass( 'tmce-active' ).addClass( 'html-active' );
+					return;
+				}
+
+				for ( id in tinyMCEPreInit.mceInit ) {
+					init = tinyMCEPreInit.mceInit[id];
+					$wrap = tinymce.$( '#wp-' + id + '-wrap' );
+
+					if ( ( $wrap.hasClass( 'tmce-active' ) || ! tinyMCEPreInit.qtInit.hasOwnProperty( id ) ) && ! init.wp_skip_init ) {
+						tinymce.init( init );
+
+						if ( ! window.wpActiveEditor ) {
+							window.wpActiveEditor = id;
+						}
+					}
+				}
+			}
+
+			if ( typeof quicktags !== 'undefined' ) {
+				for ( id in tinyMCEPreInit.qtInit ) {
+					quicktags( tinyMCEPreInit.qtInit[id] );
+
+					if ( ! window.wpActiveEditor ) {
+						window.wpActiveEditor = id;
+					}
+				}
+			}
+		}());
+		</script>
+				<div id="wp-link-backdrop" style="display: none"></div>
+		<div id="wp-link-wrap" class="wp-core-ui" style="display: none" role="dialog" aria-labelledby="link-modal-title">
+		<form id="wp-link" tabindex="-1">
+		<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="c7051209b5">		<h1 id="link-modal-title">Insert/edit link</h1>
+		<button type="button" id="wp-link-close"><span class="screen-reader-text">Close</span></button>
+		<div id="link-selector">
+			<div id="link-options">
+				<p class="howto" id="wplink-enter-url">Enter the destination URL</p>
+				<div>
+					<label><span>URL</span>
+					<input id="wp-link-url" type="text" aria-describedby="wplink-enter-url"></label>
+				</div>
+				<div class="wp-link-text-field">
+					<label><span>Link Text</span>
+					<input id="wp-link-text" type="text"></label>
+				</div>
+				<div class="link-target">
+					<label><span></span>
+					<input type="checkbox" id="wp-link-target"> Open link in a new tab</label>
+				</div>
+			</div>
+			<p class="howto" id="wplink-link-existing-content">Or link to existing content</p>
+			<div id="search-panel">
+				<div class="link-search-wrapper">
+					<label>
+						<span class="search-label">Search</span>
+						<input type="search" id="wp-link-search" class="link-search-field" autocomplete="off" aria-describedby="wplink-link-existing-content">
+						<span class="spinner"></span>
+					</label>
+				</div>
+				<div id="search-results" class="query-results" tabindex="0">
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+				</div>
+				<div id="most-recent-results" class="query-results" tabindex="0">
+					<div class="query-notice" id="query-notice-message">
+						<em class="query-notice-default">No search term specified. Showing recent items.</em>
+						<em class="query-notice-hint screen-reader-text">Search or use up and down arrow keys to select an item.</em>
+					</div>
+					<ul></ul>
+					<div class="river-waiting">
+						<span class="spinner"></span>
+					</div>
+ 				</div>
+ 			</div>
+		</div>
+		<div class="submitbox">
+			<div id="wp-link-cancel">
+				<button type="button" class="button">Cancel</button>
+			</div>
+			<div id="wp-link-update">
+				<input type="submit" value="Add Link" class="button button-primary" id="wp-link-submit" name="wp-link-submit">
+			</div>
+		</div>
+		</form>
+		</div>
+		
+    <!-- BEGIN: wpflow ga events array -->
+    <script>
+
+                jQuery(document).ready(function() {
+                    if(typeof scroll_events == 'undefined') {
+                        return;
+                    }
+                    scroll_events.bind_events( {
+                        universal: 1,
+                        gtm:0,
+                        gst:0,
+
+                        scroll_elements: [],
+                        click_elements: [{'select':'#commentsubmit','category':'Call to Action','action':'Click','label':'Post Comment','bounce':'false','evalue':''},{'select':'.icts_gatrack-newslettersubscription','category':'Call to Action','action':'Click','label':'Newsletter Subscription','bounce':'false','evalue':''}],
+                    });
+                });
+
+    </script>
+    <!-- END: wpflow ga events array -->
+
+<div id="wp-a11y-speak-polite" aria-live="polite" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div><div id="wp-a11y-speak-assertive" aria-live="assertive" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region"></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Hands on_ How to use Cisco Packet Tracer for the CCNA - ICTShore.com_files/d_vbiawPdxB.html" style="border: none;"></iframe></div><div></div></div></div><div id="mceu_25" class="mce-toolbar-grp mce-inline-toolbar-grp mce-container mce-panel" hidefocus="1" tabindex="-1" role="group" style="display: none;"><div id="mceu_25-body" class="mce-container-body mce-stack-layout"><div id="mceu_26" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_26-body" class="mce-container-body mce-flow-layout"><div id="mceu_27" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_27-body"><div id="mceu_19" class="mce-widget mce-btn mce-first" tabindex="-1" role="button" aria-label="Align left"><button id="mceu_19-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-left"></i></button></div><div id="mceu_20" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Align center"><button id="mceu_20-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-center"></i></button></div><div id="mceu_21" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Align right"><button id="mceu_21-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-right"></i></button></div><div id="mceu_22" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="No alignment"><button id="mceu_22-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-align-none"></i></button></div><div id="mceu_23" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Edit|button"><button id="mceu_23-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-edit"></i></button></div><div id="mceu_24" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Remove"><button id="mceu_24-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-no"></i></button></div></div></div></div></div></div></div><div id="mceu_31" class="mce-toolbar-grp mce-inline-toolbar-grp mce-container mce-panel" hidefocus="1" tabindex="-1" role="group" style="display: none;"><div id="mceu_31-body" class="mce-container-body mce-stack-layout"><div id="mceu_32" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_32-body" class="mce-container-body mce-flow-layout"><div id="mceu_33" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_33-body"><div id="mceu_28" class="wp-link-preview"><a href="https://www.ictshore.com/free-ccna-course/cisco-packet-tracer-introduction/#" target="_blank" rel="noopener" tabindex="-1">#</a></div><div id="mceu_29" class="mce-widget mce-btn" tabindex="-1" role="button" aria-label="Edit|button"><button id="mceu_29-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-edit"></i></button></div><div id="mceu_30" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Remove link"><button id="mceu_30-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-editor-unlink"></i></button></div></div></div></div></div></div></div><div id="mceu_37" class="mce-toolbar-grp mce-inline-toolbar-grp mce-container mce-panel" hidefocus="1" tabindex="-1" role="group" style="display: none;"><div id="mceu_37-body" class="mce-container-body mce-stack-layout"><div id="mceu_38" class="mce-container mce-toolbar mce-stack-layout-item mce-first mce-last" role="toolbar"><div id="mceu_38-body" class="mce-container-body mce-flow-layout"><div id="mceu_39" class="mce-container mce-flow-layout-item mce-first mce-last mce-btn-group" role="group"><div id="mceu_39-body"><div id="mceu_34" class="wp-link-input"><input type="text" value="" placeholder="Paste URL or type to search" class="ui-autocomplete-input" autocomplete="off" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-owns="ui-id-1"><input type="text" style="display:none" value=""></div><div id="mceu_35" class="mce-widget mce-btn mce-primary" tabindex="-1" role="button" aria-label="Apply"><button id="mceu_35-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-editor-break"></i></button></div><div id="mceu_36" class="mce-widget mce-btn mce-last" tabindex="-1" role="button" aria-label="Link options"><button id="mceu_36-button" role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-dashicon dashicons-admin-generic"></i></button></div></div></div></div></div></div></div><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content wplink-autocomplete" id="ui-id-1" role="listbox" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>

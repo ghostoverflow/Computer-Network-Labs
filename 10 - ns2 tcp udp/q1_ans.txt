@@ -1,0 +1,11 @@
+a. What path do the packets follow initially? And why?
+Initial route: 0-1-2-3
+Minimum path to destination node. Because of DV algo
+
+b. What path do the packets take after the link fails? And why?
+Route: 0-6-5-4-3
+Because after link 2-3 down, the only path left is 0-6-5-4-3
+
+c. If we remove the Distance Vector Algorithm, what path the packets follow after
+the link fails? And why?
+The packets will be lost, beaucse they won't change path that was because of DV algo.
