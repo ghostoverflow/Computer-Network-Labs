@@ -10,30 +10,6 @@ National University of Computer and Emerging Sciences
 
 (CL -307)
 
-<table>
-<thead>
-<tr class="header">
-<th>Course Instructor</th>
-<th>Dr. Taimur Bakshi</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Lab Instructor(s)</td>
-<td><p>M. Ali Umair</p>
-<p>M. Salman Shoaib</p></td>
-</tr>
-<tr class="even">
-<td>Section</td>
-<td>CS-5A</td>
-</tr>
-<tr class="odd">
-<td>Semester</td>
-<td>Fall 2020</td>
-</tr>
-</tbody>
-</table>
-
 Department of Computer Science
 
 FAST-NU, Lahore, Pakistan

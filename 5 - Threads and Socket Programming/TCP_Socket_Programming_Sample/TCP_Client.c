@@ -6,62 +6,8 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <unistd.h>
 #include <sys/socket.h> //socket
 #include <arpa/inet.h>  //inet_addr
-
-typedef enum
-{
-        false,
-        true
-} bool;
-
-bool findVowel(char *word)
-{
-        int size = strlen(word);
-        bool flag = false;
-        int i;
-        for (i = 0; i < size && !flag; i++)
-        {
-                if (word[i] == 'a' || word[i] == 'e' || word[i] == 'i' || word[i] == 'o' || word[i] == 'u' ||
-                    word[i] == 'A' || word[i] == 'E' || word[i] == 'I' || word[i] == 'O' || word[i] == 'U')
-                        flag = true;
-        }
-        return flag;
-}
-
-void reverseStr(char *str)
-{
-        char newStr[2000];
-        memset(newStr, '\0', sizeof(newStr));
-        char *token = strtok(str, " ");
-        while (token != NULL)
-        {
-                if (!findVowel(token))
-                {
-                        int size = strlen(token);
-                        int n = size;
-                        char temp;
-                        int i;
-                        for (i = 0; i < size / 2; i++, n--)
-                        {
-                                temp = token[i];
-                                token[i] = token[n - 1];
-                                token[n - 1] = temp;
-                        }
-                }
-                strcat(newStr, token);
-                token = strtok(NULL, " ");
-                if (token != NULL)
-                {
-                        int tempSize = strlen(newStr);
-                        newStr[tempSize] = ' ';
-                        newStr[tempSize + 1] = '\0';
-                }
-                else
-                        strcpy(str, newStr);
-        }
-}
 
 int main(void)
 {
@@ -103,10 +49,11 @@ int main(void)
         printf("Connected\n");
 
         //Get Input from the User
+
         printf("Enter Message: ");
         gets(client_message); //One is that gets() will only get character string data.
                               //		will get only one variable at a time.
-                              //  reads characters from stdin and loads them into str
+            //  reads characters from stdin and loads them into str
         //Send the message to Server
 
         if (send(socket_desc, client_message, strlen(client_message), 0) < 0)
@@ -122,7 +69,7 @@ int main(void)
                 printf("Receive Failed. Error!!!!!\n");
                 return -1;
         }
-        reverseStr(server_message);
+
         printf("Server Message: %s\n", server_message);
 
         memset(server_message, '\0', sizeof(server_message));
